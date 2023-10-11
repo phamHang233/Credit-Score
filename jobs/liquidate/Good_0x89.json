@@ -1,0 +1,24 @@
+{
+ "amount": {
+  "2000": [
+   1661.630122152
+  ],
+  "4": [
+   4.523996477
+  ]
+ },
+ "n_events": {
+  "1": [
+   1,
+   1
+  ]
+ },
+ "number_of_events": {
+  "0x5b17d1aee4a5a9b0b86e6dd727955bd56ff0aab4": 1,
+  "0xad75a4cb5d5727870c88709d79beafc216f58f48": 1
+ },
+ "amount_of_events": {
+  "0x5b17d1aee4a5a9b0b86e6dd727955bd56ff0aab4": 1661.630122152,
+  "0xad75a4cb5d5727870c88709d79beafc216f58f48": 4.523996477
+ }
+}

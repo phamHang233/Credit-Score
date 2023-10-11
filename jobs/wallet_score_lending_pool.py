@@ -1,7 +1,7 @@
 import json
 
 from constants.network_constants import Chains
-# from databases.mongodb_klg import MongoDB
+from databases.cs_mongodb_klg import MongoDB as KLG
 from utils.logger_utils import get_logger
 
 logger = get_logger('Get scores')
@@ -33,7 +33,7 @@ def get_score():
 
     addresses, addresses_by_file = get_data()
     logger.info(f'There are {len(addresses)} wallets')
-    db = MongoDB()
+    db = KLG()
 
     cursor = db.get_multichain_wallets_scores_by_keys(keys=addresses, projection=['creditScore', 'address'])
     scores = {w['address']: w['creditScore'] for w in cursor}
@@ -47,7 +47,6 @@ def get_score():
         for address in addresses_:
             score = scores.get(address, 300)
             level = get_level(score, ranges, levels)
-
             data[level][address] = score
             score_by_levels[level] += 1
 
@@ -77,3 +76,8 @@ def get_level(score, ranges, levels):
 
 if __name__ == '__main__':
     get_score()
+    # addresses, addresses_by_file = get_data()
+    # for file_name, addresses_ in addresses_by_file.items():
+    #     print(f"{file_name}: address: {len(addresses_)}, unique address: {len(set(addresses_))}")
+
+

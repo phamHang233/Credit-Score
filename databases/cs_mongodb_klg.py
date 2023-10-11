@@ -191,6 +191,11 @@ class MongoDB:
             logger.exception(ex)
         return None
 
+    def get_multichain_wallets_scores_by_keys(self, keys, projection=None):
+        filter_statement = {'_id': {'$in': keys}}
+        cursor = self._multichain_wallets_credit_scores_col.find(filter_statement, projection=projection)
+        return cursor
+
     # def get_wallets_statistics_data(self, keys, batch_size=1000):
     #     filter_statement = {'_id': {'$in': keys}}
     #     projection = [

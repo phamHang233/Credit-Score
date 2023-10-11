@@ -16,13 +16,13 @@ chain = {
 }
 
 
-def calculate_all_chain(file):
+def calculate_all_chain(file, level=""):
     borrows = {}
     number_of_borrows = {}
     amount_of_borrows = {}
     n_borrows = {}
     for chain_id in ["0x38", "0xfa", "0x1", "0x89", "0xa86a", "0xa4b1", "0xa"]:
-        with open(f"./{file}/{chain_id}.json", "r") as f:
+        with open(f"./{file}/{chain_id}_{level}.json", "r") as f:
             data = json.loads(f.read())
         for key, value in data["amount"].items():
             if key in borrows:
@@ -56,23 +56,57 @@ def calculate_all_chain(file):
     for key, value in number_of_borrows.items():
         if value in n_borrows[mode_n_key]:
             mode_n_total_borrow += amount_of_borrows[key]
-    with open(f"{file}/all.json", "w") as f:
-        data = {
-            "events": borrows,
-            "n_events": n_borrows,
-            "number_of_events": number_of_borrows,
-            "amount_of_events": amount_of_borrows,
-        }
-        json.dump(data, f, indent=1)
-    print("Number of wallets: ", number_of_wallets)
-    print("Average amount of wallets: ", total_borrow / number_of_wallets)
-    print("Mode amount: ", mode_key)
-    print("Percentage mode amount: ", mode_amount / total_borrow)
-    print("Average number of wallets: ", total_number_of_borrow / number_of_wallets)
-    print("Mode number of borrows: ", mode_n_key)
-    print("Percentage mode n borrows: ", mode_n_total_borrow / total_borrow)
-    print("number of borrows:", total_number_of_borrow)
-    print("Borrow amount: ", total_borrow)
+    # with open(f"{file}/all_{level}.json", "w") as f:
+    #     data = {
+    #         "events": borrows,
+    #         "n_events": n_borrows,
+    #         "number_of_events": number_of_borrows,
+    #         "amount_of_events": amount_of_borrows,
+    #     }
+    #     json.dump(data, f, indent=1)
+    try:
+        row = [{
+            "Level": level,
+            "Number of wallets": number_of_wallets,
+            "Average amount of wallets": total_borrow / number_of_wallets,
+            "Average amount of events": total_borrow / total_number_of_borrow,
+            "Mode amount": mode_key,
+            "Percentage mode amount": mode_amount / total_borrow,
+            "Average number of wallets": total_number_of_borrow / number_of_wallets,
+            "Mode number of borrows": mode_n_key,
+            "Percentage mode n borrows": mode_n_total_borrow / total_borrow,
+            "number of borrows": total_number_of_borrow,
+            "Borrow amount": total_borrow,
+            "Percentage mode number borrows": len(n_borrows[mode_n_key]) / number_of_wallets
+
+        }]
+        with open(f'{file}/level_info.csv', "a") as f:
+            writer = csv.DictWriter(
+                f, fieldnames=[
+                    "Level", "Number of wallets", "Average amount of wallets", "Average amount of events",
+                    "Mode amount", "Percentage mode amount", "Average number of wallets",
+                    "Mode number of borrows",
+                    "Percentage mode n borrows", "number of borrows", "Borrow amount",
+                    "Percentage mode number borrows"
+                ]
+            )
+            if f.tell() == 0:
+                writer.writeheader()
+            writer.writerows(row)
+    except Exception as e:
+        raise e
+
+
+    # print("Number of wallets: ", number_of_wallets)
+    # print("Average amount of wallets: ", total_borrow / number_of_wallets)
+    # print("Mode amount: ", mode_key)
+    # print("Percentage mode amount: ", mode_amount / total_borrow)
+    # print("Average number of wallets: ", total_number_of_borrow / number_of_wallets)
+    # print("Mode number of borrows: ", mode_n_key)
+    # print("Percentage mode n borrows: ", mode_n_total_borrow / total_borrow)
+    # print("number of borrows:", total_number_of_borrow)
+    # print("Borrow amount: ", total_borrow)
+    # print("Percentage mode number borrows:", len(n_borrows[mode_n_key]) / number_of_wallets)
 
 
 class BorrowAnalytic:
@@ -110,7 +144,7 @@ class BorrowAnalytic:
                 for key, value in contract["lendingInfo"]["reservesList"].items():
                     self.ctokens[value["vToken"]] = key
 
-    def count_number_of_liquidate_event(self, start_timestamp, end_timestamp, wallets):
+    def count_number_of_liquidate_event(self, start_timestamp, end_timestamp, wallets, level=""):
         events = self.mongo.get_documents(
             "lending_events",
             {
@@ -168,9 +202,9 @@ class BorrowAnalytic:
             if value in n_liquidates[mode_n_key]:
                 mode_n_total_liquidate += amount_of_liquidates[key]
 
-        with open(f"./users/debtor_{self.chain_id}.json", "w") as f:
-            json.dump(list(amount_of_liquidates.keys()), f, indent=1)
-        with open(f"./liquidate/{self.chain_id}.json", "w") as f:
+        # with open(f"./users/debtor_{self.chain_id}.json", "w") as f:
+        #     json.dump(list(amount_of_liquidates.keys()), f, indent=1)
+        with open(f"./liquidate/{level}_{self.chain_id}.json", "w") as f:
             data = {
                 "amount": liquidates,
                 "n_events": n_liquidates,
@@ -179,34 +213,34 @@ class BorrowAnalytic:
             }
             json.dump(data, f, indent=1)
 
-        row = [{
-            "Chain Id": self.chain_id,
-            "Number of wallets": number_of_wallets,
-            "Average amount of wallets": total_liquidate / number_of_wallets,
-            "Average amount of events": total_liquidate / total_number_of_liquidate,
-            "Mode amount": mode_key,
-            "Percentage mode amount": mode_amount / total_liquidate,
-            "Average number of wallets": total_number_of_liquidate / number_of_wallets,
-            "Mode number of liquidates": mode_n_key,
-            "Percentage mode n liquidates": mode_n_total_liquidate / total_liquidate,
-            "number of liquidates": total_number_of_liquidate,
-            "liquidate amount": total_liquidate,
-            "Percentage mode number liquidates": len(n_liquidates[mode_n_key]) / number_of_wallets
-
-        }]
-        with open('liquidate/chain_info.csv', "a") as f:
-            writer = csv.DictWriter(
-                f, fieldnames=[
-                    "Chain Id", "Number of wallets", "Average amount of wallets", "Average amount of events",
-                    "Mode amount", "Percentage mode amount", "Average number of wallets",
-                    "Mode number of liquidates",
-                    "Percentage mode n liquidates", "number of liquidates", "liquidate amount",
-                    "Percentage mode number liquidates"
-                ]
-            )
-            if f.tell() == 0:
-                writer.writeheader()
-            writer.writerows(row)
+        # row = [{
+        #     "Chain Id": self.chain_id,
+        #     "Number of wallets": number_of_wallets,
+        #     "Average amount of wallets": total_liquidate / number_of_wallets,
+        #     "Average amount of events": total_liquidate / total_number_of_liquidate,
+        #     "Mode amount": mode_key,
+        #     "Percentage mode amount": mode_amount / total_liquidate,
+        #     "Average number of wallets": total_number_of_liquidate / number_of_wallets,
+        #     "Mode number of liquidates": mode_n_key,
+        #     "Percentage mode n liquidates": mode_n_total_liquidate / total_liquidate,
+        #     "number of liquidates": total_number_of_liquidate,
+        #     "liquidate amount": total_liquidate,
+        #     "Percentage mode number liquidates": len(n_liquidates[mode_n_key]) / number_of_wallets
+        #
+        # }]
+        # with open('liquidate/chain_info.csv', "a") as f:
+        #     writer = csv.DictWriter(
+        #         f, fieldnames=[
+        #             "Chain Id", "Number of wallets", "Average amount of wallets", "Average amount of events",
+        #             "Mode amount", "Percentage mode amount", "Average number of wallets",
+        #             "Mode number of liquidates",
+        #             "Percentage mode n liquidates", "number of liquidates", "liquidate amount",
+        #             "Percentage mode number liquidates"
+        #         ]
+        #     )
+        #     if f.tell() == 0:
+        #         writer.writeheader()
+        #     writer.writerows(row)
         print("Saved")
         # print("Number of wallets: ", number_of_wallets)
         # print("Average amount of wallets: ", total_liquidate / number_of_wallets)
@@ -223,7 +257,7 @@ class BorrowAnalytic:
         # print("Number of liquidates:", total_number_of_liquidate)
         # print("Liquidate amount: ", total_liquidate)
 
-    def count_number_of_borrow_event(self, start_timestamp, end_timestamp, wallets):
+    def count_number_of_borrow_event(self, start_timestamp, end_timestamp, wallets, level=""):
         events = self.mongo.get_documents(
             "lending_events",
             {
@@ -275,8 +309,8 @@ class BorrowAnalytic:
 
         number_of_wallets = len(amount_of_borrows)
 
-        with open(f"./users/borrower_{self.chain_id}.json", "w") as f:
-            json.dump(list(number_of_borrows.keys()), f, indent=1)
+        # with open(f"./users/borrower_{self.chain_id}.json", "w") as f:
+        #     json.dump(list(number_of_borrows.keys()), f, indent=1)
         total_number_of_borrow = sum(number_of_borrows.values())
         total_borrow = sum(amount_of_borrows.values())
         mode_amount, mode_key = self.find_mode(borrows)
@@ -285,7 +319,7 @@ class BorrowAnalytic:
         for key, value in number_of_borrows.items():
             if value in n_borrows[mode_n_key]:
                 mode_n_total_borrow += amount_of_borrows[key]
-        with open(f"./borrows/{self.chain_id}.json", "w") as f:
+        with open(f"./borrows/{self.chain_id}_{level}.json", "w") as f:
             data = {
                 "amount": borrows,
                 "n_events": n_borrows,
@@ -293,79 +327,38 @@ class BorrowAnalytic:
                 "amount_of_events": amount_of_borrows,
             }
             json.dump(data, f, indent=1)
-        row = [{
-            "Chain Id": self.chain_id,
-            "Number of wallets": number_of_wallets,
-            "Average amount of wallets": total_borrow / number_of_wallets,
-            "Average amount of events": total_borrow / total_number_of_borrow,
-            "Mode amount": mode_key,
-            "Percentage mode amount": mode_amount / total_borrow,
-            "Average number of wallets": total_number_of_borrow / number_of_wallets,
-            "Mode number of borrows": mode_n_key,
-            "Percentage mode n borrows": mode_n_total_borrow / total_borrow,
-            "number of borrows": total_number_of_borrow,
-            "Borrow amount": total_borrow,
-            "Percentage mode number borrows": len(n_borrows[mode_n_key]) / number_of_wallets
-
-        }]
-        with open('borrows/chain_info.csv', "a") as f:
-            writer = csv.DictWriter(
-                f, fieldnames=[
-                    "Chain Id", "Number of wallets", "Average amount of wallets", "Average amount of events",
-                    "Mode amount", "Percentage mode amount", "Average number of wallets",
-                    "Mode number of borrows",
-                    "Percentage mode n borrows", "number of borrows", "Borrow amount",
-                    "Percentage mode number borrows"
-                ]
-            )
-            if f.tell() == 0:
-                writer.writeheader()
-            writer.writerows(row)
+        # row = [{
+        #     "Chain Id": self.chain_id,
+        #     "Number of wallets": number_of_wallets,
+        #     "Average amount of wallets": total_borrow / number_of_wallets,
+        #     "Average amount of events": total_borrow / total_number_of_borrow,
+        #     "Mode amount": mode_key,
+        #     "Percentage mode amount": mode_amount / total_borrow,
+        #     "Average number of wallets": total_number_of_borrow / number_of_wallets,
+        #     "Mode number of borrows": mode_n_key,
+        #     "Percentage mode n borrows": mode_n_total_borrow / total_borrow,
+        #     "number of borrows": total_number_of_borrow,
+        #     "Borrow amount": total_borrow,
+        #     "Percentage mode number borrows": len(n_borrows[mode_n_key]) / number_of_wallets
+        #
+        # }]
+        # with open(f'borrows/chain_info.csv', "a") as f:
+        #     writer = csv.DictWriter(
+        #         f, fieldnames=[
+        #             "Chain Id", "Number of wallets", "Average amount of wallets", "Average amount of events",
+        #             "Mode amount", "Percentage mode amount", "Average number of wallets",
+        #             "Mode number of borrows",
+        #             "Percentage mode n borrows", "number of borrows", "Borrow amount",
+        #             "Percentage mode number borrows"
+        #         ]
+        #     )
+        #     if f.tell() == 0:
+        #         writer.writeheader()
+        #     writer.writerows(row)
         print("Saved")
-        # print("Number of wallets: ", number_of_wallets)
-        # print("Average amount of wallets: ", total_borrow / number_of_wallets)
-        # print("Average amount of events: ", total_borrow / total_number_of_borrow)
-        # print("Mode amount: ", mode_key)
-        # print("Percentage mode amount: ", mode_amount / total_borrow)
-        # print("Average number of wallets: ", total_number_of_borrow / number_of_wallets)
-        # print("Mode number of borrows: ", mode_n_key)
-        # print("Percentage mode n borrows: ", mode_n_total_borrow / total_borrow)
-        # print("number of borrows:", total_number_of_borrow)
-        # print("Borrow amount: ", total_borrow)
-        # print("Percentage mode number borrows: ", len(n_borrows[mode_n_key]) / number_of_wallets)
-
-    # def count_number_of_borrow_user(self, start_timestamp, end_timestamp):
-    #     events = self.mongo.get_documents(
-    #         "lending_events",
-    #         {
-    #             "event_type": "BORROW",
-    #             "block_timestamp": {"$gte": start_timestamp, "$lt": end_timestamp},
-    #         },
-    #     )
-    #     wallets = []
-    #     for event in events:
-    #         wallet = event["wallet"]
-    #         wallets.append(wallet)
-    #     with open(f"./users/borrow_user_{self.chain_id}.json", "w") as f:
-    #         json.dump(wallets, f, indent=1)
-
-    # def count_number_of_liquidate_user(self, start_timestamp, end_timestamp):
-    #     events = self.mongo.get_documents(
-    #         "lending_events",
-    #         {
-    #             "event_type": "LIQUIDATE",
-    #             "block_timestamp": {"$gte": start_timestamp, "$lt": end_timestamp},
-    #         },
-    #     )
-    #     wallets = []
-    #     for event in events:
-    #         wallet = event["wallet"]
-    #         wallets.append(wallet)
-    #     with open(f"./users/liquidate_user_{self.chain_id}.json", "w") as f:
-    #         json.dump(wallets, f, indent=1)
 
 
-def process(chain, chainId):
+def get_wallet_by_chain(chain, chainId):
     start_time = 1688169600  # 1-7-2023
     end_time = 1696118400  # 1-10-2023
     # with open(f"Score/Very Good.json", "r") as f:
@@ -381,23 +374,53 @@ def process(chain, chainId):
     job.count_number_of_liquidate_event(start_timestamp=start_time, end_timestamp=end_time, wallets=[])
     print(f"Count number of event in {chain} sucessful! ")
 
+def get_wallet_by_level(chain, chainId):
+    start_time = 1688169600  # 1-7-2023
+    end_time = 1696118400  # 1-10-2023
+    klg = KLG("")
+
+    mongo = MongoDB(connection_url="", db_prefix=chain)
+    job = BorrowAnalytic(mongo, klg, chainId)
+    for level in ['Poor', 'Fair', 'Good', 'Very Good', 'Exceptional']:
+        with open(f"export/{level}.json", "r") as f:
+            data = json.loads(f.read())
+            wallets = data.keys()
+        # wallets = None
+
+        # job.count_number_of_borrow_event(
+        #     start_timestamp=start_time, end_timestamp=end_time, wallets=wallets, level=level
+        # )
+        job.count_number_of_liquidate_event(
+            start_timestamp=start_time, end_timestamp=end_time, wallets=wallets, level=level
+        )
+        print(f"Count number of event in {chain} {level} sucessful! ")
 
 if __name__ == "__main__":
-    # t1 = threading.Thread(target=process,args=("ethereum","0x1",),)
-    t2 = threading.Thread(target=process,args=("","0x38",),)
-    # t3 = threading.Thread(target=process,args=("ftm","0xfa",),)
-    # t4 = threading.Thread(target=process,args=("optimism","0xa",),)
-    # t5 = threading.Thread(target=process,args=("arbitrum","0xa4b1",),)
-    # t6 = threading.Thread(target=process,args=("avalanche","0xa86a",),)
-    # t7 = threading.Thread(target=process,args=("polygon","0x89",),)
+    # t1 = threading.Thread(target=get_wallet_by_chain,args=("ethereum","0x1",),)
+    # t2 = threading.Thread(target=get_wallet_by_chain,args=("","0x38",),)
+    # t3 = threading.Thread(target=get_wallet_by_chain,args=("ftm","0xfa",),)
+    # t4 = threading.Thread(target=get_wallet_by_chain,args=("optimism","0xa",),)
+    # t5 = threading.Thread(target=get_wallet_by_chain,args=("arbitrum","0xa4b1",),)
+    # t6 = threading.Thread(target=get_wallet_by_chain,args=("avalanche","0xa86a",),)
+    # t7 = threading.Thread(target=get_wallet_by_chain,args=("polygon","0x89",),)
 
     # t1.start()
-    t2.start()
+    # t2.start()
     # t3.start()
     # t4.start()
     # t5.start()
     # t6.start()
     # t7.start()
+    # get_wallet_by_level("ftm", "0xfa")
+    # get_wallet_by_level("ethereum", "0x1")
+    # get_wallet_by_level("polygon", "0x89")
+    # get_wallet_by_level("", "0x38")
+    # get_wallet_by_level("optimism", "0xa")
+    # get_wallet_by_level("arbitrum", "0xa4b1")
+    # get_wallet_by_level("avalanche", "0xa86a")
+    for level in ['Poor', 'Fair', 'Good', 'Very Good', 'Exceptional']:
+
+        calculate_all_chain("borrows", level=level)
 
 
     # start_time = 1688169600  # 1-7-2023
