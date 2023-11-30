@@ -76,10 +76,10 @@ class MongoDB:
     def get_wallets_with_batch_idx(self, batch_idx=1, batch_size=10000, chain_id=None, projection=None):
         projection_statement = self.get_projection_statement(projection)
         if chain_id is None:
-            filter_statement = {'flagged': batch_idx}
+            filter_statement = {'flagged': batch_idx, 'elite':True}
             cursor = self._multichain_wallets_col.find(filter=filter_statement, projection=projection_statement, batch_size=batch_size)
         else:
-            filter_statement = {'flagged': batch_idx, 'chainId': chain_id}
+            filter_statement = {'flagged': batch_idx, 'chainId': chain_id, 'elite':True}
             cursor = self._wallets_col.find(filter=filter_statement, projection=projection_statement, batch_size=batch_size)
         return cursor
 
