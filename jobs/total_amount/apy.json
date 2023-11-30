@@ -1,0 +1,1834 @@
+[
+  [
+    {
+      "query_id": "0x38",
+      "query_type": "protocol_apy",
+      "entity_id": "venus",
+      "protocol_apy": {
+        "0xeca88125a5adbe82614ffc12d0db554e2e2867c8": {
+          "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d": {
+            "deposit_apy": 0.028726097436474696,
+            "borrow_apy": 0.04046189811251155,
+            "total_deposit": 80218480.41507936,
+            "total_borrow": 63640373.048139505
+          }
+        },
+        "0xfd5840cd36d94d7229439859c0112a4185bc0255": {
+          "0x55d398326f99059ff775485246999027b3197955": {
+            "deposit_apy": 0.04518301191398555,
+            "borrow_apy": 0.06262909022455854,
+            "total_deposit": 172863459.18032885,
+            "total_borrow": 139725614.70210904
+          }
+        },
+        "0x95c78222b3d6e262426483d42cfa53685a67ab9d": {
+          "0xe9e7cea3dedca5984780bafc599bd69add087d56": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 1.3872922749533685,
+            "total_deposit": 16495746.550139718,
+            "total_borrow": 18681088.796179254
+          }
+        },
+        "0x2ff3d0f6990a40261c66e1ff2017acbc282eb6d0": {
+          "0x47bead2563dcbf3bf2c9407fea4dc236faba485a": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.6532033150032717,
+            "total_deposit": 9418535.046237623,
+            "total_borrow": 96105.55824787809
+          }
+        },
+        "0x151b1e2635a717bcdc836ecd6fbb62b674fe3e1d": {
+          "0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 3.3174770330823833e-06,
+            "total_deposit": 1152954.8602689588,
+            "total_borrow": 1.5937091704922741
+          }
+        },
+        "0xa07c5b74c9b40447a954e1466938b865b6bbea36": {
+          "0x0000000000000000000000000000000000000000": {
+            "deposit_apy": 0.0033672877675472446,
+            "borrow_apy": 0.02626745799007968,
+            "total_deposit": 1249298.3667702207,
+            "total_borrow": 215956.33122369045
+          }
+        },
+        "0x882c173bc7ff3b7786ca16dfed3dfffb9ee7847b": {
+          "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c": {
+            "deposit_apy": 0.004258131609183646,
+            "borrow_apy": 0.02210389080610753,
+            "total_deposit": 8417.004586699566,
+            "total_borrow": 2044.7518866149119
+          }
+        },
+        "0xf508fcd89b8bd15579dc79a6827cb4686a3592c8": {
+          "0x2170ed0880ac9a755fd29b2688956bd959f933f8": {
+            "deposit_apy": 0.005274018477453124,
+            "borrow_apy": 0.016856814527765662,
+            "total_deposit": 43797.93694553049,
+            "total_borrow": 17227.220766849226
+          }
+        },
+        "0x57a5297f2cb2c0aac9d554660acd6d385ab50c6b": {
+          "0x4338665cbb7b2485a8855a139b75d5e34ab0db94": {
+            "deposit_apy": 0.0007594919121807209,
+            "borrow_apy": 0.0249294991381106,
+            "total_deposit": 65627.26805167901,
+            "total_borrow": 2529.198077804188
+          }
+        },
+        "0xb248a295732e0225acd3337607cc01068e3b9c10": {
+          "0x1d2f0da169ceb9fc7b3144628db156f3f6c60dbe": {
+            "deposit_apy": 0.0014267554255364967,
+            "borrow_apy": 0.028102711672998604,
+            "total_deposit": 12165203.53940491,
+            "total_borrow": 782235.6019072576
+          }
+        },
+        "0x5f0388ebc2b94fa8e123f404b79ccf5f40b29176": {
+          "0x8ff795a6f4d97e7887c79bea79aba5cc76444adf": {
+            "deposit_apy": 0.004897037502002544,
+            "borrow_apy": 0.04276070677227661,
+            "total_deposit": 7720.26754498732,
+            "total_borrow": 1125.8272468684704
+          }
+        },
+        "0x1610bc33319e9398de5f57b33a5b184c806ad217": {
+          "0x7083609fce4d1d8dc0c979aab8c869ea2c873402": {
+            "deposit_apy": 0.044444414737270455,
+            "borrow_apy": 0.10609662151714638,
+            "total_deposit": 663975.8569644039,
+            "total_borrow": 357888.25791062124
+          }
+        },
+        "0x650b940a1033b8a1b1873f78730fcfc73ec11f1f": {
+          "0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd": {
+            "deposit_apy": 0.007430064324633001,
+            "borrow_apy": 0.045806196411572575,
+            "total_deposit": 515089.56691458914,
+            "total_borrow": 106412.42155838985
+          }
+        },
+        "0x334b3ecb4dca3593bccc3c7ebd1a1c1d1780fbf1": {
+          "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3": {
+            "deposit_apy": 0.04530880155107009,
+            "borrow_apy": 0.06279974180878711,
+            "total_deposit": 4419608.358914955,
+            "total_borrow": 3572655.4275089256
+          }
+        },
+        "0xf91d58b5ae142dacc749f58a49fcbac340cb0343": {
+          "0x0d8ce2a99bb6e3b7db580ed848240e4a0f9ae153": {
+            "deposit_apy": 0.004198609402774611,
+            "borrow_apy": 0.044848142422038384,
+            "total_deposit": 489040.34106182697,
+            "total_borrow": 58377.218196819784
+          }
+        },
+        "0x972207a639cc1b374b893cc33fa251b55ceb7c07": {
+          "0x250632378e573c6be1ac2f97fcdf00515d0aa91b": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0017174514801869822,
+            "total_deposit": 586.5429189545482,
+            "total_borrow": 6.709982107948018
+          }
+        },
+        "0xebd0070237a0713e8d94fef1b728d3d993d290ef": {
+          "0x20bff4bbeda07536ff00e073bd8359e5d80d733d": {
+            "deposit_apy": 0.0004602246194123083,
+            "borrow_apy": 0.02232850185251989,
+            "total_deposit": 44042028.130751364,
+            "total_borrow": 917632.6387513682
+          }
+        },
+        "0x9a0af7fdb2065ce470d72664de73cae409da28ec": {
+          "0x3ee2200efb3400fabb9aacf31297cbdd1d435d47": {
+            "deposit_apy": 0.004863368254057754,
+            "borrow_apy": 0.04265779988815832,
+            "total_deposit": 20445267.656739123,
+            "total_borrow": 2968028.6735857674
+          }
+        },
+        "0xec3422ef92b2fb59e84c8b02ba73f1fe84ed8d71": {
+          "0xba2ae424d960c26247dd6c32edc70b295c744c43": {
+            "deposit_apy": 0.0012633928804719474,
+            "borrow_apy": 0.030852589809514663,
+            "total_deposit": 38272610.72382285,
+            "total_borrow": 1987780.23684528
+          }
+        },
+        "0x5c9476fcd6a4f9a3654139721c949c2233bbbbc8": {
+          "0xcc42724c6683b7e57334c4e856f4c9965ed682bd": {
+            "deposit_apy": 0.00544275013222939,
+            "borrow_apy": 0.04105393901835308,
+            "total_deposit": 4897340.25024332,
+            "total_borrow": 825847.4834873292
+          }
+        },
+        "0x86ac3974e2bd0d60825230fa6f355ff11409df5c": {
+          "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82": {
+            "deposit_apy": 0.005114481557747297,
+            "borrow_apy": 0.04939303545124618,
+            "total_deposit": 4358897.7436730405,
+            "total_borrow": 614934.110042087
+          }
+        },
+        "0x26da28954763b92139ed49283625cecaf52c6f94": {
+          "0xfb6115445bff7b52feb98650c87f44907e58f802": {
+            "deposit_apy": 0.001772890713481301,
+            "borrow_apy": 0.021970928820243207,
+            "total_deposit": 11794.144498838588,
+            "total_borrow": 1281.6515804482872
+          }
+        },
+        "0x08ceb3f4a7ed3500ca0982bcd0fc7816688084c3": {
+          "0x14016e85a25aeb13065688cafb43044c2ef86784": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.9681082310780584,
+            "total_deposit": 209153.4082193264,
+            "total_borrow": 358782.2433931728
+          }
+        },
+        "0x61edcfe8dd6ba3c891cb9bec2dc7657b3b422e93": {
+          "0x85eac5ac2f758618dfa09bdbe0cf174e7d574d5b": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0409833801882733,
+            "total_deposit": 887943.9424404728,
+            "total_borrow": 11888.987594449274
+          }
+        },
+        "0xc5d3466aa484b040ee977073fcf337f2c00071c1": {
+          "0xce7de646e7208a4ef112cb6ed5038fa6cc6b12e3": {
+            "deposit_apy": 0.02225729313765301,
+            "borrow_apy": 0.08014423426655881,
+            "total_deposit": 7224506.197018,
+            "total_borrow": 2750259.934404
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0x38",
+      "query_type": "protocol_apy",
+      "entity_id": "radiant-v2",
+      "protocol_apy": {
+        "0xd50cf00b6e600dd036ba8ef475677d816d6c4281": {
+          "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c": {
+            "deposit_apy": 0.0068370768784153935,
+            "borrow_apy": 0.06763334941365495,
+            "total_deposit": 2835.818854107658,
+            "total_borrow": 1181.0193779410458
+          },
+          "0x55d398326f99059ff775485246999027b3197955": {
+            "deposit_apy": 0.021485011056361136,
+            "borrow_apy": 0.12497705083497279,
+            "total_deposit": 40681886.36556118,
+            "total_borrow": 29374132.436196346
+          },
+          "0xe9e7cea3dedca5984780bafc599bd69add087d56": {
+            "deposit_apy": 0.012767107079525886,
+            "borrow_apy": 0.07224711941485573,
+            "total_deposit": 931168.815220151,
+            "total_borrow": 677391.2840775421
+          },
+          "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d": {
+            "deposit_apy": 0.014038300705141005,
+            "borrow_apy": 0.08355484538969282,
+            "total_deposit": 3621848.816405069,
+            "total_borrow": 2516781.700854508
+          },
+          "0x2170ed0880ac9a755fd29b2688956bd959f933f8": {
+            "deposit_apy": 0.007230368637554996,
+            "borrow_apy": 0.06885089578466563,
+            "total_deposit": 9044.562878246308,
+            "total_borrow": 3914.4666225700685
+          },
+          "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c": {
+            "deposit_apy": 0.024166040696444346,
+            "borrow_apy": 0.1632327994509455,
+            "total_deposit": 290976.2586156207,
+            "total_borrow": 183809.2296496531
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0x1",
+      "query_type": "protocol_apy",
+      "entity_id": "aave-v2",
+      "protocol_apy": {
+        "0x7d2768de32b0b80b7a3454c06bdac94a69ddc7a9": {
+          "0xdac17f958d2ee523a2206206994597c13d831ec7": {
+            "deposit_apy": 0.06047419628553152,
+            "borrow_apy": 0.09475277036593921,
+            "stable_borrow_apy": 0.18593151315507583,
+            "total_deposit": 244589272.123994,
+            "total_borrow": 198144165.946197
+          },
+          "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": {
+            "deposit_apy": 0.0012476107202850084,
+            "borrow_apy": 0.010517983260387886,
+            "stable_borrow_apy": 0.05776440246522041,
+            "total_deposit": 21148.00772647,
+            "total_borrow": 3595.68257274
+          },
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+            "deposit_apy": 0.01266438758004762,
+            "borrow_apy": 0.03423609962983987,
+            "stable_borrow_apy": 0.05644395701862104,
+            "total_deposit": 386012.2844449972,
+            "total_borrow": 192204.4640153669
+          },
+          "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e": {
+            "deposit_apy": 3.947330030174001e-05,
+            "borrow_apy": 0.003078206793855953,
+            "stable_borrow_apy": 0.004400332173979615,
+            "total_deposit": 161.62797854062364,
+            "total_borrow": 3.1935731393595583
+          },
+          "0xe41d2489571d322189246dafa5ebde1f4699f498": {
+            "deposit_apy": 3.460645297170828e-05,
+            "borrow_apy": 0.0017332004498460396,
+            "stable_borrow_apy": 0.03300688467346635,
+            "total_deposit": 45047561.396015786,
+            "total_borrow": 501496.0907733346
+          },
+          "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984": {
+            "deposit_apy": 4.327491736066946e-06,
+            "borrow_apy": 0.0009815034071058992,
+            "stable_borrow_apy": 0.0016831600054776352,
+            "total_deposit": 1217835.9580013424,
+            "total_borrow": 7680.361940885446
+          },
+          "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 130550.43622441543,
+            "total_borrow": 0.0
+          },
+          "0x0d8775f648430679a709e98d2b0cb6250d2887ef": {
+            "deposit_apy": 0.004366256842101679,
+            "borrow_apy": 0.032367277391843974,
+            "stable_borrow_apy": 0.07843015501255213,
+            "total_deposit": 842746.9306898871,
+            "total_borrow": 172661.16647601852
+          },
+          "0x4fabb145d64652a948d72533023f6e7a623c7c53": {
+            "deposit_apy": 0.0009436680744114856,
+            "borrow_apy": 14.186035195600825,
+            "stable_borrow_apy": 4.58663054887353,
+            "total_deposit": 615725.9406983494,
+            "total_borrow": 215865.68247990916
+          },
+          "0x6b175474e89094c44da98b954eedeac495271d0f": {
+            "deposit_apy": 0.030423750827370588,
+            "borrow_apy": 0.05113597609608389,
+            "stable_borrow_apy": 0.1274388794081014,
+            "total_deposit": 77392203.2723508,
+            "total_borrow": 61754661.9493692
+          },
+          "0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c": {
+            "deposit_apy": 0.0015990634598810338,
+            "borrow_apy": 0.021729860831908976,
+            "stable_borrow_apy": 0.031186611058540814,
+            "total_deposit": 1596020.7150318278,
+            "total_borrow": 220579.63810486955
+          },
+          "0xdd974d5c2e2928dea5f71b9825b8b646686bd200": {
+            "deposit_apy": 0.02277682995321162,
+            "borrow_apy": 0.08027237581934332,
+            "stable_borrow_apy": 0.13486818744844498,
+            "total_deposit": 43747.27448244629,
+            "total_borrow": 27476.891633958203
+          },
+          "0x514910771af9ca656af840dff83e8264ecf986ca": {
+            "deposit_apy": 0.00517742271282029,
+            "borrow_apy": 0.03440826671314179,
+            "stable_borrow_apy": 0.08147723206746993,
+            "total_deposit": 8283517.602278268,
+            "total_borrow": 1801477.282155365
+          },
+          "0x0f5d2fb29fb7d3cfee444a200298f468908cc942": {
+            "deposit_apy": 0.0005654354326760647,
+            "borrow_apy": 0.013349716955597168,
+            "stable_borrow_apy": 0.05016243052627156,
+            "total_deposit": 2284167.0259298515,
+            "total_borrow": 193183.49343945718
+          },
+          "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2": {
+            "deposit_apy": 0.00044648855618878436,
+            "borrow_apy": 0.009785835011854038,
+            "stable_borrow_apy": 0.04489019557432794,
+            "total_deposit": 3731.8200761579637,
+            "total_borrow": 233.62967544488512
+          },
+          "0x408e41876cccdc0f92210600ef50372656052a38": {
+            "deposit_apy": 0.00019596732081494928,
+            "borrow_apy": 0.005401565451073065,
+            "stable_borrow_apy": 0.007725450657922517,
+            "total_deposit": 3469434.05345398,
+            "total_borrow": 120150.08585699368
+          },
+          "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f": {
+            "deposit_apy": 0.0507417936417256,
+            "borrow_apy": 0.14127896576737276,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 1120804.337117231,
+            "total_borrow": 763303.563813946
+          },
+          "0x57ab1ec28d129707052df4df418d58a2d46d5f51": {
+            "deposit_apy": 0.010491788063666352,
+            "borrow_apy": 0.027680189515130182,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 2691403.205834716,
+            "total_borrow": 1469801.7543329669
+          },
+          "0x0000000000085d4780b73119b644ae5ecd22b376": {
+            "deposit_apy": 0.0020949071146576514,
+            "borrow_apy": 39.467770151359815,
+            "stable_borrow_apy": 15.452969024064625,
+            "total_deposit": 1110698.4321183956,
+            "total_borrow": 761368.8475265747
+          },
+          "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+            "deposit_apy": 0.028993871998733045,
+            "borrow_apy": 0.040192947633928444,
+            "stable_borrow_apy": 0.1159467116956463,
+            "total_deposit": 406459886.568752,
+            "total_borrow": 360383833.454908
+          },
+          "0xd533a949740bb3306d119cc777fa900ba034cd52": {
+            "deposit_apy": 0.014354558403833595,
+            "borrow_apy": 0.10074852012156921,
+            "stable_borrow_apy": 0.11642456487743447,
+            "total_deposit": 18507250.69257052,
+            "total_borrow": 3925736.5140352785
+          },
+          "0x056fd409e1d7a124bd7017459dfea2f387b6d5cd": {
+            "deposit_apy": 0.016476205861481796,
+            "borrow_apy": 0.034755846017558545,
+            "stable_borrow_apy": 0.07698503844028282,
+            "total_deposit": 992265.61,
+            "total_borrow": 593351.75
+          },
+          "0xba100000625a3754423978a60c9317c58a424e3d": {
+            "deposit_apy": 0.004095994961943683,
+            "borrow_apy": 0.07629219197468018,
+            "stable_borrow_apy": 0.05498017979423242,
+            "total_deposit": 121921.32168977114,
+            "total_borrow": 10430.695422809888
+          },
+          "0x8798249c2e607446efb7ad49ec89dd1865ff4272": {
+            "deposit_apy": 7.002398660915787e-09,
+            "borrow_apy": 5.160200706999518e-05,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 1808662.575354318,
+            "total_borrow": 599.9512605733545
+          },
+          "0xd5147bc8e386d91cc5dbe72099dac6c9b99276f5": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 6358.77180762956,
+            "total_borrow": 6389.009391153351
+          },
+          "0x03ab458634910aad20ef5f1c8ee96f1d6ac54919": {
+            "deposit_apy": 0.0015798253509757831,
+            "borrow_apy": 0.009982326792634666,
+            "stable_borrow_apy": 0.004978769324717858,
+            "total_deposit": 92642.25943017242,
+            "total_borrow": 18408.89825518288
+          },
+          "0xd46ba6d942050d489dbd938a2c909a5d5039a161": {
+            "deposit_apy": 1.6691103804379832,
+            "borrow_apy": 2.6981362358441032,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 170468.694104012,
+            "total_borrow": 30326.278315419
+          },
+          "0x8e870d67f660d95d5be530380d0ec0bd388289e1": {
+            "deposit_apy": 0.024763905023653665,
+            "borrow_apy": 0.039875536941329726,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 367385.3562267179,
+            "total_borrow": 287309.08859091933
+          },
+          "0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b": {
+            "deposit_apy": 1.519822861132615,
+            "borrow_apy": 5.065384783547497,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 3052.848348304048,
+            "total_borrow": 2414.0850122507522
+          },
+          "0x853d955acef822db058eb8505911ed77f175b99e": {
+            "deposit_apy": 0.0202825321280935,
+            "borrow_apy": 0.038597837011102865,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 2642169.1456938037,
+            "total_borrow": 2001414.9356993244
+          },
+          "0x956f47f50a910163d8bf957cf5846d573e7f87ca": {
+            "deposit_apy": 0.000509869549830011,
+            "borrow_apy": 0.2742435591691694,
+            "stable_borrow_apy": 0.24901184763913498,
+            "total_deposit": 12482.6522719988,
+            "total_borrow": 2684.8709890062682
+          },
+          "0xae7ab96520de3a18e5e111b5eaab095312d7fe84": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 620413.6366127544,
+            "total_borrow": 0.0
+          },
+          "0xc18360217d8f7ab5e7c516566761ea12ce7f9d72": {
+            "deposit_apy": 1.2464277383550382e-06,
+            "borrow_apy": 0.0005262005967827665,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 1110547.9513212424,
+            "total_borrow": 3755.6850215022773
+          },
+          "0xa693b19d2931d498c5b318df961919bb4aee87a5": {
+            "deposit_apy": 0.0005643354350644003,
+            "borrow_apy": 0.005955755488951775,
+            "stable_borrow_apy": 0.0029734570212878175,
+            "total_deposit": 6328759.674099,
+            "total_borrow": 756092.204822
+          },
+          "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b": {
+            "deposit_apy": 0.015138575572091861,
+            "borrow_apy": 0.06179900251537673,
+            "stable_borrow_apy": 0.08943997617161403,
+            "total_deposit": 134746.92400934114,
+            "total_borrow": 52031.30082176302
+          },
+          "0x111111111117dc0aa78b770fa6a738034120c302": {
+            "deposit_apy": 0.27590518534457575,
+            "borrow_apy": 0.8773290730991217,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 488065.42978980375,
+            "total_borrow": 271426.32582388323
+          },
+          "0x5f98805a4e8be255a32880fdec7f6728c6568ba0": {
+            "deposit_apy": 0.24533150802073522,
+            "borrow_apy": 0.3942343919924569,
+            "stable_borrow_apy": 0.510356078497491,
+            "total_deposit": 355539.9202870171,
+            "total_borrow": 311975.9879841476
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0x1",
+      "query_type": "protocol_apy",
+      "entity_id": "aave-v3",
+      "protocol_apy": {
+        "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2": {
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+            "deposit_apy": 0.019431229150314477,
+            "borrow_apy": 0.03140143718832289,
+            "stable_borrow_apy": 0.10577427355709546,
+            "total_deposit": 423847.547656842,
+            "total_borrow": 310391.5234586535
+          },
+          "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0": {
+            "deposit_apy": 3.471849523384307e-05,
+            "borrow_apy": 0.003632880152817819,
+            "stable_borrow_apy": 0.07896381494958349,
+            "total_deposit": 725498.8318975767,
+            "total_borrow": 8171.27179619462
+          },
+          "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": {
+            "deposit_apy": 0.0009201110804351043,
+            "borrow_apy": 0.010160041007818421,
+            "stable_borrow_apy": 0.08078795125899085,
+            "total_deposit": 10745.40109375,
+            "total_borrow": 1222.01140532
+          },
+          "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+            "deposit_apy": 0.02975552221261979,
+            "borrow_apy": 0.036854180061505204,
+            "stable_borrow_apy": 0.052524223446080764,
+            "total_deposit": 339800554.344371,
+            "total_borrow": 305905751.018487
+          },
+          "0x6b175474e89094c44da98b954eedeac495271d0f": {
+            "deposit_apy": 0.03758954113871171,
+            "borrow_apy": 0.04888348261052089,
+            "stable_borrow_apy": 0.06691640315922331,
+            "total_deposit": 68167281.35778722,
+            "total_borrow": 58564414.47780752
+          },
+          "0x514910771af9ca656af840dff83e8264ecf986ca": {
+            "deposit_apy": 0.0003509517660627015,
+            "borrow_apy": 0.008294315289882226,
+            "stable_borrow_apy": 0.1032497049099046,
+            "total_deposit": 3091689.8680264875,
+            "total_borrow": 164170.90980600557
+          },
+          "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 640413.6411317305,
+            "total_borrow": 0.0
+          },
+          "0xbe9895146f7af43049ca1c1ae358b0541ea49704": {
+            "deposit_apy": 0.004482757761938849,
+            "borrow_apy": 0.029023349815875843,
+            "stable_borrow_apy": 0.12593088912442973,
+            "total_deposit": 8570.688672938315,
+            "total_borrow": 1576.387802340491
+          },
+          "0xdac17f958d2ee523a2206206994597c13d831ec7": {
+            "deposit_apy": 0.08059781926933174,
+            "borrow_apy": 0.1111141968937357,
+            "stable_borrow_apy": 0.16503224236489067,
+            "total_deposit": 273926960.791138,
+            "total_borrow": 223934387.981922
+          },
+          "0xae78736cd615f374d3085123a210448e74fc6393": {
+            "deposit_apy": 0.0007798529606335425,
+            "borrow_apy": 0.012015761598872743,
+            "stable_borrow_apy": 0.10732162348214547,
+            "total_deposit": 39435.75045696646,
+            "total_borrow": 3028.038905793968
+          },
+          "0x5f98805a4e8be255a32880fdec7f6728c6568ba0": {
+            "deposit_apy": 0.02845722221216196,
+            "borrow_apy": 0.04027245384802214,
+            "stable_borrow_apy": 0.09360836015588414,
+            "total_deposit": 4564370.514096653,
+            "total_borrow": 3604597.0384958116
+          },
+          "0xd533a949740bb3306d119cc777fa900ba034cd52": {
+            "deposit_apy": 0.01734317118658102,
+            "borrow_apy": 0.09337273720703543,
+            "stable_borrow_apy": 0.22613501595289898,
+            "total_deposit": 4399270.115606734,
+            "total_borrow": 1303856.7723055535
+          },
+          "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2": {
+            "deposit_apy": 0.0017638895115230646,
+            "borrow_apy": 0.018683913296511978,
+            "stable_borrow_apy": 0.143825701899706,
+            "total_deposit": 10704.939401573118,
+            "total_borrow": 1273.9350905082915
+          },
+          "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f": {
+            "deposit_apy": 0.04241237627186667,
+            "borrow_apy": 0.1336985211021129,
+            "stable_borrow_apy": 0.31716976975203637,
+            "total_deposit": 496068.02776893496,
+            "total_borrow": 252776.67135819633
+          },
+          "0xba100000625a3754423978a60c9317c58a424e3d": {
+            "deposit_apy": 0.04244699053979328,
+            "borrow_apy": 0.15850092778360136,
+            "stable_borrow_apy": 0.4435810396217812,
+            "total_deposit": 346728.8461774198,
+            "total_borrow": 122469.47363378282
+          },
+          "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984": {
+            "deposit_apy": 0.000988758029437431,
+            "borrow_apy": 0.013958832779887853,
+            "stable_borrow_apy": 0.13399215269701736,
+            "total_deposit": 1198025.4964863514,
+            "total_borrow": 106762.96178184135
+          },
+          "0x5a98fcbea516cf06857215779fd812ca3bef1b32": {
+            "deposit_apy": 0.002224373365353749,
+            "borrow_apy": 0.021003008735186457,
+            "stable_borrow_apy": 0.14866640365683215,
+            "total_deposit": 2306655.9334121216,
+            "total_borrow": 308221.8175382227
+          },
+          "0xc18360217d8f7ab5e7c516566761ea12ce7f9d72": {
+            "deposit_apy": 0.0005398485401872932,
+            "borrow_apy": 0.011683500050182483,
+            "stable_borrow_apy": 0.1465739741067711,
+            "total_deposit": 37155.64074075748,
+            "total_borrow": 2157.973283530574
+          },
+          "0x111111111117dc0aa78b770fa6a738034120c302": {
+            "deposit_apy": 0.00014998161823887024,
+            "borrow_apy": 0.006141948366564565,
+            "stable_borrow_apy": 0.13751330587418154,
+            "total_deposit": 1769589.55513418,
+            "total_borrow": 54177.827680370036
+          },
+          "0x853d955acef822db058eb8505911ed77f175b99e": {
+            "deposit_apy": 0.028182450494961486,
+            "borrow_apy": 0.040076441763253534,
+            "stable_borrow_apy": 0.056447404325294936,
+            "total_deposit": 309693.9409446554,
+            "total_borrow": 243436.6626969044
+          },
+          "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.025315119192837354,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 0.0,
+            "total_borrow": 24886879.44732954
+          },
+          "0xd33526068d116ce69f19a9ee46f0bd304f21a51f": {
+            "deposit_apy": 0.007028446565791713,
+            "borrow_apy": 0.03096905025654162,
+            "stable_borrow_apy": 0.13371423965684892,
+            "total_deposit": 594532.5923914505,
+            "total_borrow": 170667.80686975646
+          },
+          "0x83f20f44975d03b1b09e64809b757c47f942beea": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.08328707068297692,
+            "total_deposit": 104549270.6305376,
+            "total_borrow": 0.0
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0x1",
+      "query_type": "protocol_apy",
+      "entity_id": "compound-v3",
+      "protocol_apy": {
+        "0xa17581a9e3356d9a858b789d68b4d866e593ae94": {
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+            "deposit_apy": 0,
+            "borrow_apy": 0.03181697218967884,
+            "total_deposit": 0,
+            "total_borrow": 26049.073581733028,
+            "is_base": true
+          },
+          "0xbe9895146f7af43049ca1c1ae358b0541ea49704": {
+            "deposit_apy": 0.01677765171700173,
+            "borrow_apy": 0,
+            "total_deposit": 31.023818661664986,
+            "total_borrow": 0,
+            "is_base": false
+          },
+          "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0": {
+            "deposit_apy": 0.01677765171700173,
+            "borrow_apy": 0,
+            "total_deposit": 28432.95520508368,
+            "total_borrow": 0,
+            "is_base": false
+          }
+        },
+        "0xc3d688b66703497daa19211eedff47f25384cdc3": {
+          "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+            "deposit_apy": 0,
+            "borrow_apy": 0.040195369067918874,
+            "total_deposit": 0,
+            "total_borrow": 304235170.917738,
+            "is_base": true
+          },
+          "0xc00e94cb662c3520282e6f5717214004a7f26888": {
+            "deposit_apy": 0.03083010657172671,
+            "borrow_apy": 0,
+            "total_deposit": 899999.9896099498,
+            "total_borrow": 0,
+            "is_base": false
+          },
+          "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": {
+            "deposit_apy": 0.03083010657172671,
+            "borrow_apy": 0,
+            "total_deposit": 13234.94604192,
+            "total_borrow": 0,
+            "is_base": false
+          },
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+            "deposit_apy": 0.03083010657172671,
+            "borrow_apy": 0,
+            "total_deposit": 110094.24887729106,
+            "total_borrow": 0,
+            "is_base": false
+          },
+          "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984": {
+            "deposit_apy": 0.03083010657172671,
+            "borrow_apy": 0,
+            "total_deposit": 3632144.6350363498,
+            "total_borrow": 0,
+            "is_base": false
+          },
+          "0x514910771af9ca656af840dff83e8264ecf986ca": {
+            "deposit_apy": 0.03083010657172671,
+            "borrow_apy": 0,
+            "total_deposit": 1608912.6945519939,
+            "total_borrow": 0,
+            "is_base": false
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0x1",
+      "query_type": "protocol_apy",
+      "entity_id": "compound",
+      "protocol_apy": {
+        "0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e": {
+          "0x0d8775f648430679a709e98d2b0cb6250d2887ef": {
+            "deposit_apy": 2.3402744489420257e-05,
+            "borrow_apy": 0.025774439112339786,
+            "total_deposit": 144188438.35200998,
+            "total_borrow": 176792.65109313797
+          }
+        },
+        "0x5d3a536e4d6dbd6114cc1ead35777bab948e3643": {
+          "0x6b175474e89094c44da98b954eedeac495271d0f": {
+            "deposit_apy": 0.030726244053490115,
+            "borrow_apy": 0.04830091389222835,
+            "total_deposit": 159406026.0977203,
+            "total_borrow": 120316415.189562
+          }
+        },
+        "0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5": {
+          "0x0000000000000000000000000000000000000000": {
+            "deposit_apy": 0.0002654891514439761,
+            "borrow_apy": 0.0234866895150061,
+            "total_deposit": 265244.1568492681,
+            "total_borrow": 3791.0574673036895
+          }
+        },
+        "0x158079ee67fce2f58472a96584a73c7ab9ac95c1": {
+          "0x1985365e9f78359a9b6ad760e32412f4a445e862": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.04514165230269884,
+            "total_deposit": 1079.953911452997,
+            "total_borrow": 55.2724770348618
+          }
+        },
+        "0x39aa39c021dfbae8fac545936693ac917d5e7563": {
+          "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+            "deposit_apy": 0.021068042559127642,
+            "borrow_apy": 0.0498760769026203,
+            "total_deposit": 193544681.05948365,
+            "total_borrow": 150733775.991043
+          }
+        },
+        "0xf650c3d88d12db855b8bf7d11be6c55a4e07dcc9": {
+          "0xdac17f958d2ee523a2206206994597c13d831ec7": {
+            "deposit_apy": 0.06577940636131019,
+            "borrow_apy": 0.08710517725416533,
+            "total_deposit": 255775916.599758,
+            "total_borrow": 210914776.669089
+          }
+        },
+        "0xccf4429db6322d5c611ee964527d42e5d685dd6a": {
+          "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": {
+            "deposit_apy": 7.198386894780029e-05,
+            "borrow_apy": 0.026313591402532976,
+            "total_deposit": 15582.456031689997,
+            "total_borrow": 53.97867174
+          }
+        },
+        "0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407": {
+          "0xe41d2489571d322189246dafa5ebde1f4699f498": {
+            "deposit_apy": 0.006390984937070465,
+            "borrow_apy": 0.06658465786145129,
+            "total_deposit": 7132155.651719611,
+            "total_borrow": 939739.2433920715
+          }
+        },
+        "0xf5dce57282a584d2746faf1593d3121fcac444dc": {
+          "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.06473042142954655,
+            "total_deposit": 168166.24355753313,
+            "total_borrow": 254.5465131686475
+          }
+        },
+        "0x35a18000230da775cac24873d00ff85bccded550": {
+          "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984": {
+            "deposit_apy": 0.002011629819163474,
+            "borrow_apy": 0.043584392039672126,
+            "total_deposit": 3895517.1468832106,
+            "total_borrow": 244656.642303189
+          }
+        },
+        "0x70e36f6bf80a52b3b46b3af8e106cc0ed743e8e4": {
+          "0xc00e94cb662c3520282e6f5717214004a7f26888": {
+            "deposit_apy": 0.0011674402705501574,
+            "borrow_apy": 0.04229623114582437,
+            "total_deposit": 66651.54356012984,
+            "total_borrow": 2502.8294170169515
+          }
+        },
+        "0x12392f67bdf24fae0af363c24ac620a2f67dad86": {
+          "0x0000000000085d4780b73119b644ae5ecd22b376": {
+            "deposit_apy": 0.034790751955389165,
+            "borrow_apy": 0.04924233308863779,
+            "total_deposit": 1765313.9803692605,
+            "total_borrow": 1357780.1324986944
+          }
+        },
+        "0xface851a4921ce59e912d19329929ce6da6eb0c7": {
+          "0x514910771af9ca656af840dff83e8264ecf986ca": {
+            "deposit_apy": 0.0003735726138835993,
+            "borrow_apy": 0.030158376233120343,
+            "total_deposit": 390423.3296911275,
+            "total_borrow": 6543.513264918956
+          }
+        },
+        "0x95b4ef2869ebd94beb4eee400a99824bf5dc325b": {
+          "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2": {
+            "deposit_apy": 0.0036521384882743924,
+            "borrow_apy": 0.052876579171634575,
+            "total_deposit": 297.73132609511293,
+            "total_borrow": 28.08429951828336
+          }
+        },
+        "0x4b0181102a0112a2ef11abee5563bb4a3176c9d7": {
+          "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2": {
+            "deposit_apy": 0.00014297948426955642,
+            "borrow_apy": 0.027353078808713516,
+            "total_deposit": 5137174.258413656,
+            "total_borrow": 36287.46039317304
+          }
+        },
+        "0xe65cdb6479bac1e22340e4e755fae7e509ecd06c": {
+          "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9": {
+            "deposit_apy": 0.0024531075643909883,
+            "borrow_apy": 0.04632604420839548,
+            "total_deposit": 7886.171700815542,
+            "total_borrow": 568.8651656732861
+          }
+        },
+        "0x80a2ae356fc9ef4305676f7a3e2ed04e12c33946": {
+          "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e": {
+            "deposit_apy": 2.5774827595581584e-05,
+            "borrow_apy": 0.025704746818046242,
+            "total_deposit": 52.18937733332083,
+            "total_borrow": 0.07066517961576779
+          }
+        },
+        "0x041171993284df560249b57358f931d9eb7b925d": {
+          "0x8e870d67f660d95d5be530380d0ec0bd388289e1": {
+            "deposit_apy": 0.014978299717653076,
+            "borrow_apy": 0.03582393743325518,
+            "total_deposit": 32724.027978110153,
+            "total_borrow": 18429.58715480113
+          }
+        },
+        "0x7713dd9ca933848f6819f38b8352d9a15ea73f67": {
+          "0x956f47f50a910163d8bf957cf5846d573e7f87ca": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.02611146658718244,
+            "total_deposit": 1735.5899512929882,
+            "total_borrow": 715.8209694652761
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0x1",
+      "query_type": "protocol_apy",
+      "entity_id": "spark",
+      "protocol_apy": {
+        "0xc13e21b648a5ee794902342038ff3adab66be987": {
+          "0x6b175474e89094c44da98b954eedeac495271d0f": {
+            "deposit_apy": 0.04474148614713003,
+            "borrow_apy": 0.05526314745435967,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 242603075.24442008,
+            "total_borrow": 217720119.1283889
+          },
+          "0x83f20f44975d03b1b09e64809b757c47f942beea": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.010050166561863527,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 90260495.91685744,
+            "total_borrow": 0.0
+          },
+          "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+            "deposit_apy": 0.030613115746404018,
+            "borrow_apy": 0.03944270542860573,
+            "stable_borrow_apy": 0.04580838839353518,
+            "total_deposit": 100031.764256,
+            "total_borrow": 82079.694381
+          },
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+            "deposit_apy": 0.018507630750200343,
+            "borrow_apy": 0.030466019729437743,
+            "stable_borrow_apy": 0.028395685804686543,
+            "total_deposit": 47892.608964070765,
+            "total_borrow": 30809.53687740848
+          },
+          "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0": {
+            "deposit_apy": 1.2415329895265614e-05,
+            "borrow_apy": 0.0029932346037784274,
+            "stable_borrow_apy": 0.046027857448506015,
+            "total_deposit": 203554.0099460878,
+            "total_borrow": 994.9009799023477
+          },
+          "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.08328707068297692,
+            "total_deposit": 0.0,
+            "total_borrow": 0.0
+          },
+          "0x6810e776880c02933d47db1b9fc05908e5386b96": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.010050166561863527,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 180075.1,
+            "total_borrow": 0.0
+          },
+          "0xae78736cd615f374d3085123a210448e74fc6393": {
+            "deposit_apy": 2.322022354483977e-05,
+            "borrow_apy": 0.0020635062271874283,
+            "stable_borrow_apy": 0.07250818481071275,
+            "total_deposit": 14070.95240451934,
+            "total_borrow": 186.466775326536
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0x1",
+      "query_type": "protocol_apy",
+      "entity_id": "morpho-compound",
+      "protocol_apy": {
+        "0x8888882f8f843896699869179fb6e4f7e3b58888": {
+          "0x6b175474e89094c44da98b954eedeac495271d0f": {
+            "deposit_apy": 0.030726244053490115,
+            "borrow_apy": 0.04830091389222835,
+            "total_deposit": 1478571.9901055389,
+            "total_borrow": 1174513.8780719957
+          },
+          "0xc00e94cb662c3520282e6f5717214004a7f26888": {
+            "deposit_apy": 0.0011674402705501574,
+            "borrow_apy": 0.04229623114582437,
+            "total_deposit": 112.65966351782467,
+            "total_borrow": 3.4952713441379872
+          },
+          "0x0000000000000000000000000000000000000000": {
+            "deposit_apy": 0.0002654891514439761,
+            "borrow_apy": 0.0234866895150061,
+            "total_deposit": 34.17411373412521,
+            "total_borrow": 23.54596789552218
+          },
+          "0x956f47f50a910163d8bf957cf5846d573e7f87ca": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.02611146658718244,
+            "total_deposit": 26.36081814975245,
+            "total_borrow": 5.214857066e-09
+          },
+          "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984": {
+            "deposit_apy": 0.002011629819163474,
+            "borrow_apy": 0.043584392039672126,
+            "total_deposit": 25891.917334654663,
+            "total_borrow": 1928.4742243497674
+          },
+          "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+            "deposit_apy": 0.021068042559127642,
+            "borrow_apy": 0.0498760769026203,
+            "total_deposit": 589478.314876,
+            "total_borrow": 5423989.963602
+          },
+          "0xdac17f958d2ee523a2206206994597c13d831ec7": {
+            "deposit_apy": 0.06577940636131019,
+            "borrow_apy": 0.08710517725416533,
+            "total_deposit": 9364285.560060998,
+            "total_borrow": 83407.56974199999
+          },
+          "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": {
+            "deposit_apy": 7.198386894780029e-05,
+            "borrow_apy": 0.026313591402532976,
+            "total_deposit": 492.97960959,
+            "total_borrow": 0.01384003
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0x1",
+      "query_type": "protocol_apy",
+      "entity_id": "morpho-aave",
+      "protocol_apy": {
+        "0x777777c9898d384f785ee44acfe945efdff5f3e0": {
+          "0xdac17f958d2ee523a2206206994597c13d831ec7": {
+            "deposit_apy": 0.06047419628553152,
+            "borrow_apy": 0.09475277036593921,
+            "total_deposit": 11065733.260569999,
+            "total_borrow": 8202399.596054
+          },
+          "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": {
+            "deposit_apy": 0.0012476107202850084,
+            "borrow_apy": 0.010517983260387886,
+            "total_deposit": 1605.4851604799999,
+            "total_borrow": 138.26894689
+          },
+          "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+            "deposit_apy": 0.01266438758004762,
+            "borrow_apy": 0.03423609962983987,
+            "total_deposit": 91707.42799355181,
+            "total_borrow": 129505.66144697974
+          },
+          "0x6b175474e89094c44da98b954eedeac495271d0f": {
+            "deposit_apy": 0.030423750827370588,
+            "borrow_apy": 0.05113597609608389,
+            "total_deposit": 7931844.111838352,
+            "total_borrow": 12920147.231571242
+          },
+          "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+            "deposit_apy": 0.028993871998733045,
+            "borrow_apy": 0.040192947633928444,
+            "total_deposit": 33876768.511348,
+            "total_borrow": 22644426.966005
+          },
+          "0xd533a949740bb3306d119cc777fa900ba034cd52": {
+            "deposit_apy": 0.014354558403833595,
+            "borrow_apy": 0.10074852012156921,
+            "total_deposit": 1197184.492291985,
+            "total_borrow": 58.93300753877399
+          },
+          "0xae7ab96520de3a18e5e111b5eaab095312d7fe84": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "total_deposit": 166726.1519565286,
+            "total_borrow": 0.0
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0xfa",
+      "query_type": "protocol_apy",
+      "entity_id": "aave-v3",
+      "protocol_apy": {
+        "0x794a61358d6845594f94dc1db02a252b5b4814ad": {
+          "0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e": {
+            "deposit_apy": 0.003704946186137148,
+            "borrow_apy": 0.014436742459501994,
+            "stable_borrow_apy": 0.05315633363281602,
+            "total_deposit": 17858.24969542758,
+            "total_borrow": 6143.928121497194
+          },
+          "0xb3654dc3d10ea7645f8319668e8f54d2574fbdc8": {
+            "deposit_apy": 0.0035010465800049406,
+            "borrow_apy": 0.026411336056913592,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 43.96233193768247,
+            "total_borrow": 8.659027040111512
+          },
+          "0x04068da6c83afcfa0e13ba15a6696662335d5b75": {
+            "deposit_apy": 0.00311809661886997,
+            "borrow_apy": 0.011793410472444643,
+            "stable_borrow_apy": 0.052812916687055456,
+            "total_deposit": 104434.44196,
+            "total_borrow": 28055.998525
+          },
+          "0x321162cd933e2be498cd2267a90534a804051b11": {
+            "deposit_apy": 7.492146974619196e-05,
+            "borrow_apy": 0.0038240274226262194,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 1.87583549,
+            "total_borrow": 0.04605997
+          },
+          "0x74b23882a30290451a17c44f4f05243b6b58c76d": {
+            "deposit_apy": 1.0923747877367163e-06,
+            "borrow_apy": 0.0003980044914795311,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 13.693434380721806,
+            "total_borrow": 0.03517971712046023
+          },
+          "0x049d68029688eabf473097a2fc38ef61633a3c7a": {
+            "deposit_apy": 0.0005994588858977412,
+            "borrow_apy": 0.001128603777940107,
+            "stable_borrow_apy": 0.08693586398190489,
+            "total_deposit": 8718.238727,
+            "total_borrow": 244.375603
+          },
+          "0x6a07a792ab2965c72a5b8088d3a069a7ac3a993b": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 2.0741670804118177,
+            "total_borrow": 0.0
+          },
+          "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83": {
+            "deposit_apy": 0.0006082171696168981,
+            "borrow_apy": 0.010932590363649908,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 223427.27951674224,
+            "total_borrow": 17201.358369286067
+          },
+          "0x1e4f97b9f9f913c46f1632781732927b9019c68b": {
+            "deposit_apy": 0.0005183748323116522,
+            "borrow_apy": 0.009509173560749096,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 870.0194501383137,
+            "total_borrow": 73.92017883914265
+          },
+          "0xae75a438b2e0cb8bb01ec1e1e376de11d44477cc": {
+            "deposit_apy": 0.00985562036199994,
+            "borrow_apy": 0.044636613587896834,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 82.64219556663545,
+            "total_borrow": 32.921067312742814
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0xa",
+      "query_type": "protocol_apy",
+      "entity_id": "aave-v3",
+      "protocol_apy": {
+        "0x794a61358d6845594f94dc1db02a252b5b4814ad": {
+          "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1": {
+            "deposit_apy": 0.024275571516927386,
+            "borrow_apy": 0.036357044462351995,
+            "stable_borrow_apy": 0.05597442210590531,
+            "total_deposit": 3285406.5401994195,
+            "total_borrow": 2346650.588742834
+          },
+          "0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6": {
+            "deposit_apy": 0.0002873777117158305,
+            "borrow_apy": 0.007502659392266908,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 189408.6091862606,
+            "total_borrow": 9101.36341444949
+          },
+          "0x7f5c764cbc14f9669b88837ca1490cca17c31607": {
+            "deposit_apy": 0.028091334579900762,
+            "borrow_apy": 0.034783336845277235,
+            "stable_borrow_apy": 0.051149769713251025,
+            "total_deposit": 18967657.199388,
+            "total_borrow": 16677649.83907
+          },
+          "0x68f180fcce6836688e9084f035309e29bf0a2095": {
+            "deposit_apy": 0.0004963761445828663,
+            "borrow_apy": 0.007453212564380696,
+            "stable_borrow_apy": 0.06183654320035159,
+            "total_deposit": 540.87250915,
+            "total_borrow": 45.18333927
+          },
+          "0x4200000000000000000000000000000000000006": {
+            "deposit_apy": 0.00758081699660651,
+            "borrow_apy": 0.019328747376048172,
+            "stable_borrow_apy": 0.09003001695528123,
+            "total_deposit": 17779.991513074066,
+            "total_borrow": 8251.930744974055
+          },
+          "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58": {
+            "deposit_apy": 0.06545062716366257,
+            "borrow_apy": 0.09335746313134385,
+            "stable_borrow_apy": 0.10988144421039658,
+            "total_deposit": 6867942.566478,
+            "total_borrow": 5585089.256124
+          },
+          "0x76fb31fb4af56892a25e32cfc43de717950c9278": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 4187.179801465196,
+            "total_borrow": 0.0
+          },
+          "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9": {
+            "deposit_apy": 0.028230005899902988,
+            "borrow_apy": 0.04011043221907973,
+            "stable_borrow_apy": 0.05645172457100034,
+            "total_deposit": 3147131.195954661,
+            "total_borrow": 2475493.207042618
+          },
+          "0x4200000000000000000000000000000000000042": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 1025569.5598271965,
+            "total_borrow": 0.0
+          },
+          "0x1f32b1c2345538c0c6f582fcb022739c4a194ebb": {
+            "deposit_apy": 7.899017645485173e-05,
+            "borrow_apy": 0.004555067712520566,
+            "stable_borrow_apy": 0.05870316039828882,
+            "total_deposit": 17233.421195478768,
+            "total_borrow": 352.37640394648406
+          },
+          "0xc40f949f8a4e094d1b49a23ea9241d289b7b2819": {
+            "deposit_apy": 0.024575865946006692,
+            "borrow_apy": 0.03740901356313353,
+            "stable_borrow_apy": 0.09059810816101521,
+            "total_deposit": 120322.28646325012,
+            "total_borrow": 88383.66422246049
+          },
+          "0xdfa46478f9e5ea86d57387849598dbfb2e964b02": {
+            "deposit_apy": 0.024565549083247262,
+            "borrow_apy": 0.03971434886400127,
+            "stable_borrow_apy": 0.09302164817371517,
+            "total_deposit": 360850.36728804634,
+            "total_borrow": 281164.63299414207
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0xa4b1",
+      "query_type": "protocol_apy",
+      "entity_id": "aave-v3",
+      "protocol_apy": {
+        "0x794a61358d6845594f94dc1db02a252b5b4814ad": {
+          "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1": {
+            "deposit_apy": 0.033161476690865,
+            "borrow_apy": 0.03938139965446985,
+            "stable_borrow_apy": 0.06309593213346631,
+            "total_deposit": 6256152.63216766,
+            "total_borrow": 4833377.083879078
+          },
+          "0xf97f4df75117a78c1a5a0dbb814af92458539fb4": {
+            "deposit_apy": 0.0008091532501222076,
+            "borrow_apy": 0.01261975021684636,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 1095102.3518959724,
+            "total_borrow": 88286.62701186608
+          },
+          "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": {
+            "deposit_apy": 0.03037432626322012,
+            "borrow_apy": 0.035568329026243184,
+            "stable_borrow_apy": 0.05126364389466542,
+            "total_deposit": 33366727.043044,
+            "total_borrow": 29989649.867516
+          },
+          "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f": {
+            "deposit_apy": 0.00073920119332338,
+            "borrow_apy": 0.009102244609807242,
+            "stable_borrow_apy": 0.06183654320035159,
+            "total_deposit": 1760.37084192,
+            "total_borrow": 179.44746794
+          },
+          "0x82af49447d8a07e3bd95bd0d56f35241523fbab1": {
+            "deposit_apy": 0.007783492003552883,
+            "borrow_apy": 0.01958693093657482,
+            "stable_borrow_apy": 0.09036468372281625,
+            "total_deposit": 44290.73335492135,
+            "total_borrow": 20827.860588287673
+          },
+          "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9": {
+            "deposit_apy": 0.05847885281629517,
+            "borrow_apy": 0.08733242437041966,
+            "stable_borrow_apy": 0.10524211189149346,
+            "total_deposit": 17170373.051168,
+            "total_borrow": 13937705.555274
+          },
+          "0xba5ddd1f9d7f570dc94a51479a000e3bce967196": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 1848.3541890339884,
+            "total_borrow": 0.0
+          },
+          "0xd22a58f79e9481d1a88e00c343885a588b34b68b": {
+            "deposit_apy": 0.026177781226235375,
+            "borrow_apy": 0.03952892392878948,
+            "stable_borrow_apy": 0.11617520188237163,
+            "total_deposit": 40279.76,
+            "total_borrow": 20826.54
+          },
+          "0x5979d7b546e38e414f7e9822514be443a4800529": {
+            "deposit_apy": 6.549557941726292e-05,
+            "borrow_apy": 0.0043034895200788625,
+            "stable_borrow_apy": 0.056540611629136484,
+            "total_deposit": 31224.95116325745,
+            "total_borrow": 560.2546729840492
+          },
+          "0x3f56e0c36d275367b8c502090edf38289b3dea0d": {
+            "deposit_apy": 0.31251189645681876,
+            "borrow_apy": 0.4644598146784573,
+            "stable_borrow_apy": 0.5395442700151001,
+            "total_deposit": 22453.763275679295,
+            "total_borrow": 20056.550336852626
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0xa4b1",
+      "query_type": "protocol_apy",
+      "entity_id": "radiant-v2",
+      "protocol_apy": {
+        "0xf4b1486dd74d07706052a33d31d7c0aafd0659e1": {
+          "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f": {
+            "deposit_apy": 0.008965022509456189,
+            "borrow_apy": 0.0881716285798313,
+            "total_deposit": 1511.46322422,
+            "total_borrow": 638.58588065
+          },
+          "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9": {
+            "deposit_apy": 0.021307957717776826,
+            "borrow_apy": 0.13021321962075194,
+            "total_deposit": 21496342.125501,
+            "total_borrow": 14810733.934446
+          },
+          "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": {
+            "deposit_apy": 0.02241952833637728,
+            "borrow_apy": 0.1412882361657346,
+            "total_deposit": 90959561.930302,
+            "total_borrow": 61040814.720962
+          },
+          "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1": {
+            "deposit_apy": 0.021752018743885326,
+            "borrow_apy": 0.13554248289911786,
+            "total_deposit": 10806482.18617276,
+            "total_borrow": 7317840.374089785
+          },
+          "0x82af49447d8a07e3bd95bd0d56f35241523fbab1": {
+            "deposit_apy": 0.013944952093438268,
+            "borrow_apy": 0.10235458688492494,
+            "total_deposit": 79514.12478165011,
+            "total_borrow": 45199.74661555209
+          },
+          "0x5979d7b546e38e414f7e9822514be443a4800529": {
+            "deposit_apy": 0.006042190348794829,
+            "borrow_apy": 0.08560720526270438,
+            "total_deposit": 29251.273769763913,
+            "total_borrow": 8581.01865142835
+          },
+          "0x912ce59144191c1204e64559fe8253a0e49e6548": {
+            "deposit_apy": 0.007701578816924348,
+            "borrow_apy": 0.10070451671455394,
+            "total_deposit": 18677043.88529247,
+            "total_borrow": 5973587.843767787
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0xa86a",
+      "query_type": "protocol_apy",
+      "entity_id": "aave-v2",
+      "protocol_apy": {
+        "0x4f01aed16d97e3ab5ab2b501154dc9bb0f1a5a2c": {
+          "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab": {
+            "deposit_apy": 0.0018494310264880465,
+            "borrow_apy": 0.018031282021508277,
+            "stable_borrow_apy": 0.030454532345146834,
+            "total_deposit": 4599.095387554934,
+            "total_borrow": 528.3570625511517
+          },
+          "0xd586e7f844cea2f87f50152665bcbc2c279d8d70": {
+            "deposit_apy": 0.009747157803905004,
+            "borrow_apy": 0.023485472307673616,
+            "stable_borrow_apy": 0.051909375136945934,
+            "total_deposit": 4561390.290409086,
+            "total_borrow": 2117765.7335633347
+          },
+          "0xc7198437980c041c805a1edcba50c1ce5db95118": {
+            "deposit_apy": 0.022366313981850183,
+            "borrow_apy": 0.035677077664117096,
+            "stable_borrow_apy": 0.053931750564660375,
+            "total_deposit": 2168618.271527,
+            "total_borrow": 1520442.228198
+          },
+          "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664": {
+            "deposit_apy": 0.007861791370288751,
+            "borrow_apy": 0.021077101382061647,
+            "stable_borrow_apy": 0.050671014827428085,
+            "total_deposit": 7380050.52643,
+            "total_borrow": 3078671.473961
+          },
+          "0x63a72806098bd3d9520cc43356dd78afe5d386d9": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.030454532345146834,
+            "total_deposit": 3345.363709098336,
+            "total_borrow": 0.0
+          },
+          "0x50b7545627a5162f82a992c33b87adc75187b218": {
+            "deposit_apy": 9.179865728481396e-05,
+            "borrow_apy": 0.003991167024855136,
+            "stable_borrow_apy": 0.030454532345146834,
+            "total_deposit": 432.24025732,
+            "total_borrow": 11.06813104
+          },
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7": {
+            "deposit_apy": 0.0035484582913325458,
+            "borrow_apy": 0.02578749199114272,
+            "stable_borrow_apy": 0.05127109362458726,
+            "total_deposit": 189618.15984222008,
+            "total_borrow": 31036.029500339268
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0xa86a",
+      "query_type": "protocol_apy",
+      "entity_id": "aave-v3",
+      "protocol_apy": {
+        "0x794a61358d6845594f94dc1db02a252b5b4814ad": {
+          "0xd586e7f844cea2f87f50152665bcbc2c279d8d70": {
+            "deposit_apy": 0.028775318635239966,
+            "borrow_apy": 0.04045671455552968,
+            "stable_borrow_apy": 0.05649568259589821,
+            "total_deposit": 3831951.592819397,
+            "total_borrow": 3039622.462852161
+          },
+          "0x5947bb275c521040051d82396192181b413227a3": {
+            "deposit_apy": 4.067075845548551e-05,
+            "borrow_apy": 0.002816128164597087,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 355793.8040022911,
+            "total_borrow": 6432.1261451689925
+          },
+          "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e": {
+            "deposit_apy": 0.027131443905987762,
+            "borrow_apy": 0.03433740031144672,
+            "stable_borrow_apy": 0.051085042855992135,
+            "total_deposit": 32671869.91258,
+            "total_borrow": 28365241.367889
+          },
+          "0x50b7545627a5162f82a992c33b87adc75187b218": {
+            "deposit_apy": 0.00014722926661159264,
+            "borrow_apy": 0.004052642255813366,
+            "stable_borrow_apy": 0.06183654320035159,
+            "total_deposit": 994.49226317,
+            "total_borrow": 45.2495254
+          },
+          "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab": {
+            "deposit_apy": 0.0034348341502554725,
+            "borrow_apy": 0.019913625006903857,
+            "stable_borrow_apy": 0.0813707088415061,
+            "total_deposit": 18867.49959872639,
+            "total_borrow": 3860.120596709068
+          },
+          "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7": {
+            "deposit_apy": 0.047373904665168665,
+            "borrow_apy": 0.06747738166171535,
+            "stable_borrow_apy": 0.08361023543112855,
+            "total_deposit": 15005208.204777,
+            "total_borrow": 12106055.952776
+          },
+          "0x63a72806098bd3d9520cc43356dd78afe5d386d9": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 3566.772920770378,
+            "total_borrow": 0.0
+          },
+          "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7": {
+            "deposit_apy": 0.028441983596693365,
+            "borrow_apy": 0.057281857521377155,
+            "stable_borrow_apy": 0.1421372922187778,
+            "total_deposit": 3234644.7064414285,
+            "total_borrow": 2035972.9691629861
+          },
+          "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 1461988.5226898752,
+            "total_borrow": 0.0
+          },
+          "0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64": {
+            "deposit_apy": 0.02864003118114944,
+            "borrow_apy": 0.04040233556634565,
+            "stable_borrow_apy": 0.056488780280769424,
+            "total_deposit": 8008.732489671344,
+            "total_borrow": 6345.194639689204
+          },
+          "0x5c49b268c9841aff1cc3b0a418ff5c3442ee3f3b": {
+            "deposit_apy": 0.013329543573263214,
+            "borrow_apy": 0.029185705505141213,
+            "stable_borrow_apy": 0.055058260027274875,
+            "total_deposit": 15950.436917100667,
+            "total_borrow": 9180.130731199992
+          },
+          "0x152b9d0fdc40c096757f570a51e494bd4b943e50": {
+            "deposit_apy": 4.597180387988509e-05,
+            "borrow_apy": 0.0029941757342566433,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 1941.81229442,
+            "total_borrow": 37.320676
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0x89",
+      "query_type": "protocol_apy",
+      "entity_id": "aave-v2",
+      "protocol_apy": {
+        "0x8dff5e27ea6b7ac08ebfdf9eb090f32ee9a30fcf": {
+          "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063": {
+            "deposit_apy": 0.011280835714509996,
+            "borrow_apy": 0.03192301793319441,
+            "stable_borrow_apy": 0.05623641437572302,
+            "total_deposit": 13444002.273842674,
+            "total_borrow": 7498761.511361731
+          },
+          "0x2791bca1f2de4661ed88a30c99a7a9449aa84174": {
+            "deposit_apy": 0.015898094084374037,
+            "borrow_apy": 0.037022389667035416,
+            "stable_borrow_apy": 0.05884295785885896,
+            "total_deposit": 21001672.563985,
+            "total_borrow": 14697450.183555
+          },
+          "0xc2132d05d31c914a87c6611c10748aeb04b58e8f": {
+            "deposit_apy": 0.04226910645053783,
+            "borrow_apy": 0.13023670922084718,
+            "stable_borrow_apy": 0.1473180486802541,
+            "total_deposit": 6299727.082855,
+            "total_borrow": 3381473.178465
+          },
+          "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6": {
+            "deposit_apy": 7.422570127646466e-06,
+            "borrow_apy": 0.0016371690514656034,
+            "stable_borrow_apy": 0.03467729032932576,
+            "total_deposit": 1170.82521971,
+            "total_borrow": 17.71628623
+          },
+          "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619": {
+            "deposit_apy": 0.00010974061047530626,
+            "borrow_apy": 0.005251507266032851,
+            "stable_borrow_apy": 0.044036461747328115,
+            "total_deposit": 25728.76623251937,
+            "total_borrow": 1347.6138699424112
+          },
+          "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270": {
+            "deposit_apy": 0.006862888264562272,
+            "borrow_apy": 0.04506568763001928,
+            "stable_borrow_apy": 0.1314118039594372,
+            "total_deposit": 11971200.494379587,
+            "total_borrow": 4221510.466243926
+          },
+          "0xd6df932a45c0f255f85145f286ea0b292b21c90b": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.030454532345146834,
+            "total_deposit": 124345.5723264303,
+            "total_borrow": 0.0
+          },
+          "0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7": {
+            "deposit_apy": 7.002398660915787e-09,
+            "borrow_apy": 0.0036682729666890346,
+            "stable_borrow_apy": 0.005244510353606957,
+            "total_deposit": 347476.29955412145,
+            "total_borrow": 4180.685764722865
+          },
+          "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3": {
+            "deposit_apy": 0.007938275858527133,
+            "borrow_apy": 0.10228114184533732,
+            "stable_borrow_apy": 0.04852225901854079,
+            "total_deposit": 7658.344047380508,
+            "total_borrow": 1076.9536900341773
+          },
+          "0x85955046df4668e1dd369d2de9f3aeb98dd2a369": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 31.297769538879464,
+            "total_borrow": 0.0
+          },
+          "0x172370d5cd63279efa6d502dab29171933a610af": {
+            "deposit_apy": 1.3164518146702164e-06,
+            "borrow_apy": 0.10756737207408751,
+            "stable_borrow_apy": 0.09158439636858784,
+            "total_deposit": 61376.127273271886,
+            "total_borrow": 7925.055184943041
+          },
+          "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.0,
+            "total_deposit": 3129.667489561457,
+            "total_borrow": 0.0
+          },
+          "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39": {
+            "deposit_apy": 2.1007196204791967e-08,
+            "borrow_apy": 0.007225861762373498,
+            "stable_borrow_apy": 0.01033862131851837,
+            "total_deposit": 21417.005880159275,
+            "total_borrow": 550.7126859005876
+          }
+        }
+      }
+    }
+  ],
+  [
+    {
+      "query_id": "0x89",
+      "query_type": "protocol_apy",
+      "entity_id": "aave-v3",
+      "protocol_apy": {
+        "0x794a61358d6845594f94dc1db02a252b5b4814ad": {
+          "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063": {
+            "deposit_apy": 0.02877199044117651,
+            "borrow_apy": 0.04021407828491119,
+            "stable_borrow_apy": 0.05646487775659703,
+            "total_deposit": 8606262.478021896,
+            "total_borrow": 6786339.489871627
+          },
+          "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39": {
+            "deposit_apy": 0.000365444918456026,
+            "borrow_apy": 0.008464494248214827,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 413859.0674046322,
+            "total_borrow": 22425.202206245605
+          },
+          "0x2791bca1f2de4661ed88a30c99a7a9449aa84174": {
+            "deposit_apy": 0.08651913403170686,
+            "borrow_apy": 0.11036102321615382,
+            "stable_borrow_apy": 0.12714198017505063,
+            "total_deposit": 37741711.359179,
+            "total_borrow": 34406203.280341
+          },
+          "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6": {
+            "deposit_apy": 7.49004609765791e-05,
+            "borrow_apy": 0.002888950175444993,
+            "stable_borrow_apy": 0.06183654320035159,
+            "total_deposit": 1471.43896112,
+            "total_borrow": 47.75389313
+          },
+          "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619": {
+            "deposit_apy": 0.00597430278374711,
+            "borrow_apy": 0.022982038716879316,
+            "stable_borrow_apy": 0.08157738876643483,
+            "total_deposit": 21616.83296311534,
+            "total_borrow": 6666.869405253534
+          },
+          "0xc2132d05d31c914a87c6611c10748aeb04b58e8f": {
+            "deposit_apy": 0.05373631543583168,
+            "borrow_apy": 0.07744924858808377,
+            "stable_borrow_apy": 0.0937328154724324,
+            "total_deposit": 11617813.806914,
+            "total_borrow": 9401509.432924
+          },
+          "0xd6df932a45c0f255f85145f286ea0b292b21c90b": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 41755.31739939193,
+            "total_borrow": 0.0
+          },
+          "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270": {
+            "deposit_apy": 0.019903655044484436,
+            "borrow_apy": 0.045779249916993114,
+            "stable_borrow_apy": 0.08437089800047892,
+            "total_deposit": 44256105.8380498,
+            "total_borrow": 24356830.429071113
+          },
+          "0x172370d5cd63279efa6d502dab29171933a610af": {
+            "deposit_apy": 0.0026628751217738778,
+            "borrow_apy": 0.04842257910332837,
+            "stable_borrow_apy": 0.1970714640959914,
+            "total_deposit": 1397616.661389669,
+            "total_borrow": 120801.93631082117
+          },
+          "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a": {
+            "deposit_apy": 0.018952657546408735,
+            "borrow_apy": 0.06228415954216304,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 245996.2104439221,
+            "total_borrow": 95552.34594665606
+          },
+          "0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7": {
+            "deposit_apy": 1.5860558744362763e-05,
+            "borrow_apy": 0.0019503098099264982,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 2379639.708803142,
+            "total_borrow": 29806.185322148925
+          },
+          "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3": {
+            "deposit_apy": 0.03568876106251584,
+            "borrow_apy": 0.1475185380569195,
+            "stable_borrow_apy": 0.429896149528765,
+            "total_deposit": 330098.08655326173,
+            "total_borrow": 105157.05494189731
+          },
+          "0x85955046df4668e1dd369d2de9f3aeb98dd2a369": {
+            "deposit_apy": 0.0031796307856011286,
+            "borrow_apy": 0.03349301963878171,
+            "stable_borrow_apy": 0.1274968522421447,
+            "total_deposit": 1251.2119175506368,
+            "total_borrow": 185.49822112840275
+          },
+          "0xe111178a87a3bff0c8d18decba5798827539ae99": {
+            "deposit_apy": 0.045529434900803745,
+            "borrow_apy": 0.06119659998598426,
+            "stable_borrow_apy": 0.07783000024682285,
+            "total_deposit": 449606.84,
+            "total_borrow": 356073.83
+          },
+          "0x4e3decbb3645551b8a19f0ea1678079fcb33fb4c": {
+            "deposit_apy": 0.04749186611405398,
+            "borrow_apy": 0.06625821920784758,
+            "stable_borrow_apy": 0.08237264769790653,
+            "total_deposit": 60386.68893828823,
+            "total_borrow": 54604.73559375315
+          },
+          "0xe0b52e49357fd4daf2c15e02058dce6bc0057db4": {
+            "deposit_apy": 0.02406440238531271,
+            "borrow_apy": 0.039304188492118364,
+            "stable_borrow_apy": 0.05634932322666897,
+            "total_deposit": 142193.93857988404,
+            "total_borrow": 109639.312696209
+          },
+          "0xa3fa99a148fa48d14ed51d610c367c61876997f1": {
+            "deposit_apy": 0.01940713711944042,
+            "borrow_apy": 0.03526782127948991,
+            "stable_borrow_apy": 0.05583563181111462,
+            "total_deposit": 425843.1115013155,
+            "total_borrow": 295202.69986448536
+          },
+          "0x3a58a54c066fdc0f2d55fc9c89f0415c92ebf3c4": {
+            "deposit_apy": 0.0,
+            "borrow_apy": 0.0,
+            "stable_borrow_apy": 0.09417428614989709,
+            "total_deposit": 46882478.33243367,
+            "total_borrow": 0.0
+          },
+          "0xfa68fb4628dff1028cfec22b4162fccd0d45efb6": {
+            "deposit_apy": 1.6441767220154446e-05,
+            "borrow_apy": 0.0030958440961308398,
+            "stable_borrow_apy": 0.061915004469112356,
+            "total_deposit": 40280938.03172517,
+            "total_borrow": 267846.3032634387
+          },
+          "0x03b54a6e9a984069379fae1a4fc4dbae93b3bccd": {
+            "deposit_apy": 0.000223709642094283,
+            "borrow_apy": 0.006551369793766693,
+            "stable_borrow_apy": 0.060807068274455034,
+            "total_deposit": 3450.0031784570365,
+            "total_borrow": 139.0351931420282
+          }
+        }
+      }
+    }
+  ]
+]

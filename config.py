@@ -25,3 +25,19 @@ class MongoDbKLGConfig:
     WITHDRAWS = "withdraws"
     LIQUIDATES = "liquidates"
     SMART_CONTRACTS = "smart_contracts"
+
+class LendingMongoDbKLGConfig:
+    HOST= "mongodb://lendingKLGReader:lending_klg_reader_UFpYa6E2URcm8qTK@35.198.222.97:27017,34.124.133.164:27017,34.124.205.24:27017/"
+    KLG_DATABASE = "lending_knowledge_graph"
+    KLG = "lending_knowledge_graph"
+    WALLETS = "wallets"
+    MULTICHAIN_WALLETS = "multichain_wallets"
+    DEPOSITS = "deposits"
+    BORROWS = "borrows"
+    REPAYS = "repays"
+    WITHDRAWS = "withdraws"
+    LIQUIDATES = "liquidates"
+    SMART_CONTRACTS = "smart_contracts"
+class SmartContractLabel:
+    CONNECTION_URL= "mongodb://contractLabelReader:contract_labelReader_8BGaTucG9twx2Uzv@35.198.222.97:27017,34.124.133.164:27017,34.124.205.24:27017/"
+    DATABASE = "SmartContractLabel"

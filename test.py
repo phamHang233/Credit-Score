@@ -1,46 +1,20 @@
-import json
-
-# from databases.cs_mongodb_klg import MongoDB as KLG
-from databases.mongodb import MongoDB
-
-
-class BorrowAnalytic:
-    def __init__(self, mongo: MongoDB, chain_id):
-        self.mongo = mongo
-        self.chain_id = chain_id
-
-    def count_number_of_borrow_event(self, start_timestamp, end_timestamp):
-        events = self.mongo.get_documents(
-            "lending_events",
-            {
-                "event_type": "BORROW",
-                "block_timestamp": {"$gte": start_timestamp, "$lt": end_timestamp},
-            },
-        )
-        borrows = {}
-        number_of_borrows = {}
-        amount_of_borrows = {}
-        prices = {}
-        print("get docs")
-        for event in events:
-            if "amount_in_usd" in event:
-                amount_in_usd = event["amount_in_usd"]
-                print(amount_in_usd)
-
-
-if __name__ == "__main__":
-    start_time = 1690848000
-    end_time = 1693526400
-    # with open(f"Score/Very Good.json", "r") as f:
-    #     wallets = json.loads(f.read())
-    # wallets = None
-    mongo = MongoDB(connection_url="", db_prefix="ftm")
-    # klg = KLG(connection_url="")
-    job = BorrowAnalytic(mongo, "0xa")
-    job.count_number_of_borrow_event(start_timestamp=start_time, end_timestamp=end_time)
-    # jobs.count_number_of_borrow_user(start_timestamp=start_time, end_timestamp=end_time)
-    # jobs.count_number_of_borrow_event(start_timestamp=start_time, end_timestamp=end_time, wallets=wallets)
-    # calculate_all_chain("borrows")
-    print(".---------------------------------.")
-    # jobs.count_number_of_liquidate_event(start_timestamp=start_time, end_timestamp=end_time, wallets=wallets)
-    # calculate_all_chain("liquidate")
+my_dict= {
+ "venus": {
+  "0xe14f5cc9b3885e7454a3f220710bc693d5f02bbf": {
+   "borrow_amount": 238.29000000000002,
+   "deposit_with_lth": 0
+  }},
+"aave": {
+  "0x1210c3425cf38a442b9629a4edfc92a1ee0bed62": {
+   "borrow_amount": 0,
+   "deposit_with_lth": 1.1823247147742078
+  },
+  "0xef22a550eb632055e58c2f20487b1a9a12a66d29": {
+   "borrow_amount": 48.0737,
+   "deposit_with_lth": 87.99957102581999
+  }}}
+unique_addresses= set()
+for key, sub_dict in my_dict.items():
+    for address in sub_dict.keys():
+        unique_addresses.add(address)
+print(unique_addresses)

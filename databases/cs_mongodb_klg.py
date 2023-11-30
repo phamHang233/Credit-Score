@@ -1,12 +1,9 @@
-from typing import List
 
 from pymongo import MongoClient, UpdateOne
 from utils.logger_utils import get_logger
 # from config import get_logger
 from config import MongoDbKLGConfig
 
-# from constants.constants import ChainConstant, GraphCreditScoreConfigKeys
-from utils.retry_handler import retry_handler
 from utils.time_execute_decorator import TimeExeTag, sync_log_time_exe
 
 # from utils.time_execute_decorator import sync_log_time_exe, TimeExeTag
@@ -34,6 +31,7 @@ class MongoDB:
         self._profiles_col = self.mongo_db["profiles"]
 
         self._configs_col = self.mongo_db["configs"]
+        self.projects= self.mongo_db['projects']
 
         # self._create_index()
 
@@ -75,15 +73,15 @@ class MongoDB:
     #     return doc
 
     # @sync_log_time_exe(tag=TimeExeTag.databases)
-    # def get_wallets_with_batch_idx(self, batch_idx=1, batch_size=10000, chain_id=None, projection=None):
-    #     projection_statement = self.get_projection_statement(projection)
-    #     if chain_id is None:
-    #         filter_statement = {'flagged': batch_idx}
-    #         cursor = self._multichain_wallets_col.find(filter=filter_statement, projection=projection_statement, batch_size=batch_size)
-    #     else:
-    #         filter_statement = {'flagged': batch_idx, 'chainId': chain_id}
-    #         cursor = self._wallets_col.find(filter=filter_statement, projection=projection_statement, batch_size=batch_size)
-    #     return cursor
+    def get_wallets_with_batch_idx(self, batch_idx=1, batch_size=10000, chain_id=None, projection=None):
+        projection_statement = self.get_projection_statement(projection)
+        if chain_id is None:
+            filter_statement = {'flagged': batch_idx}
+            cursor = self._multichain_wallets_col.find(filter=filter_statement, projection=projection_statement, batch_size=batch_size)
+        else:
+            filter_statement = {'flagged': batch_idx, 'chainId': chain_id}
+            cursor = self._wallets_col.find(filter=filter_statement, projection=projection_statement, batch_size=batch_size)
+        return cursor
 
     # @sync_log_time_exe(tag=TimeExeTag.databases)
     # def get_selective_wallet_addresses(self, batch_size=10000):
@@ -374,3 +372,11 @@ class MongoDB:
             projection_statements[field] = True
 
         return projection_statements
+
+    def get_info_of_lending_protocol(self, protocol, projection:list=None):
+        if projection is not None:
+            docs= self.projects.find_one({'_id':protocol}, projection)
+
+        else:
+            docs= self.projects.find_one({'_id': protocol})
+        return docs
