@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class MongoConfig:
@@ -11,7 +14,7 @@ class MongoConfig:
 
 
 class MongoDbKLGConfig:
-    HOST =  os.getenv("MONGODB_CONNECTION_URL")
+    HOST = os.getenv("MONGODB_CONNECTION_URL")
     USERNAME = "root"
     PASSWORD = 'password'
     # KLG_DATABASE = "klg_database"
@@ -26,8 +29,9 @@ class MongoDbKLGConfig:
     LIQUIDATES = "liquidates"
     SMART_CONTRACTS = "smart_contracts"
 
+
 class LendingMongoDbKLGConfig:
-    HOST= ""
+    HOST = ""
     KLG_DATABASE = "lending_knowledge_graph"
     KLG = "lending_knowledge_graph"
     WALLETS = "wallets"
@@ -38,6 +42,8 @@ class LendingMongoDbKLGConfig:
     WITHDRAWS = "withdraws"
     LIQUIDATES = "liquidates"
     SMART_CONTRACTS = "smart_contracts"
+
+
 class SmartContractLabel:
-    CONNECTION_URL= ""
+    CONNECTION_URL = ""
     DATABASE = "SmartContractLabel"
