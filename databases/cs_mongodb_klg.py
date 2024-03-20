@@ -195,9 +195,14 @@ class MongoDB:
         cursor = self._multichain_wallets_credit_scores_col.find(filter_statement, projection=projection)
         return cursor
 
-    def get_multichain_wallets_scores_by_key(self, keys, projection=None):
-        filter_statement = {'_id':  keys}
-        cursor = self._multichain_wallets_credit_scores_col.find_one(filter_statement, projection=projection)
+    def get_multichain_wallets_scores_by_score(self, score, projection=None):
+        filter_statement = {'creditScore': {"$gte" : score}}
+        cursor = self._multichain_wallets_credit_scores_col.find(filter_statement, projection=projection)
+        return cursor
+
+    def get_multichain_wallets_by_keys(self, keys, projection=None):
+        filter_statement =  {'_id': {'$in': keys}}
+        cursor = self._multichain_wallets_col.find(filter_statement, projection=projection)
         return cursor
 
     # def get_wallets_statistics_data(self, keys, batch_size=1000):

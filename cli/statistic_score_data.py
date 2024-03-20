@@ -69,7 +69,7 @@ def statistic_scores(n_cpu, cpu, wallet_batch_size, max_workers):
         top_borrow_token_amount = {level: {} for level in levels}
 
         cursor = klg_db.get_tokens_by_keys(list(all_tokens))
-        tokens_price = {t['_id']: {'price': t.get('price', None), 'idCoingecko': t['idCoingecko']}for t in cursor}
+        tokens_price = {t['_id']: {'price': t.get('price', 0), 'idCoingecko': t['idCoingecko']}for t in cursor}
 
         for level, info in lending_tokens.items():
             for token_address, balance in info.items():
