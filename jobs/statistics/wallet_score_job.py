@@ -98,7 +98,7 @@ class WalletScoresJob(BaseJob):
                         n_wallets[level] += 1
 
                         for token_address_with_chain, amount in doc.get('tokens', {}).items():
-                            if amount > 1e18:
+                            if amount < 1e18:
                                 if token_address_with_chain not in token_data[level]:
                                     token_data[level][token_address_with_chain] = {
                                         'borrow_amount': 0,
@@ -107,7 +107,7 @@ class WalletScoresJob(BaseJob):
                                 token_data[level][token_address_with_chain]['amount'] += amount
 
                         for token_address_with_chain, amount in doc.get('borrowTokens', {}).items():
-                            if amount > 1e18:
+                            if amount < 1e18:
                                 if token_address_with_chain not in token_data[level]:
                                     token_data[level][token_address_with_chain] = {
                                         'borrow_amount': 0,

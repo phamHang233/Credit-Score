@@ -35,10 +35,6 @@ K
 requirement.txt,9/4/947575bab703658c1cbf5f87b75506b7180a9f8e
 ?
 cli/__init__.py,7/8/78fd7d88322c81a0c062c02bdaca4c82d1abebff
-J
-cli/top_borrow_tokens.json,c/6/c6b4dbbfe0b19b49ef94652166da9aaf7d5f8bfc
-C
-cli/top_tokens.json,6/1/6111896e3332a21c074486135853c56d89736fb7
 4
 .env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
 :
@@ -46,14 +42,8 @@ C
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 d
 4venv/lib/python3.10/site-packages/dotenv/__init__.py,4/6/4642cc80b72cab1b523350667a6dbb2b349e6ef7
-F
-top_borrow_tokens.json,6/e/6eb8d64db0ca58061cb88c9ffbe47009c47d81ca
-?
-top_tokens.json,5/b/5b4f43cef41dcc78067353d3d248fcc906829366
 =
 jobs/check.py,3/e/3ecd42959e4845873d1d3cbf393158b38a30c7aa
-7
-test.py,a/3/a36e355ddb203d7d4133221f339dc406cb9f480f
 Q
 !databases/smart_contract_label.py,3/a/3a12957529421413c8d4203697f405f75b010c59
 \
