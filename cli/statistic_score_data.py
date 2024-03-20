@@ -43,7 +43,7 @@ def statistic_scores(n_cpu, cpu, wallet_batch_size, max_workers):
         batch_size=1,
         max_workers=max_workers,
         db=klg_db,
-        wallets_batch=2,
+        wallets_batch=wallets_batch,
         n_cpu=n_cpu,
         cpu=cpu,
         wallet_batch_size=wallet_batch_size,

@@ -39,3 +39,5 @@ J
 cli/top_borrow_tokens.json,c/6/c6b4dbbfe0b19b49ef94652166da9aaf7d5f8bfc
 C
 cli/top_tokens.json,6/1/6111896e3332a21c074486135853c56d89736fb7
+4
+.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
