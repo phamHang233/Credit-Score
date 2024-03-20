@@ -1,0 +1,10 @@
+
+6python:S125"Remove this commented out code.(ÔËÃ˜
+]python:S3457:"EAdd replacement fields or use a normal string instead of an f-string.(ú³¸â
+6python:S125S"Remove this commented out code.(ÆÔœ¦
+;python:S125{"Remove this commented out code.(Þý›àÿÿÿÿÿ
+<python:S125ˆ"Remove this commented out code.(ú§³©ûÿÿÿÿ
+7python:S125"Remove this commented out code.(öáÞü
+mpython:S3776¬"TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(ˆå’È
+6python:S125³"Remove this commented out code.(€†Ž=
+7python:S125½"Remove this commented out code.(«üéº

@@ -227,6 +227,7 @@ class WalletScoresJob(BaseJob):
         self.combined(n_wallets, asset_info, borrow_info, loan_ratio_info, liquidate_info)
         logger.info(f'[{wallets_batch_indicates}] Executed, took {time.time() - self.start_exec_time, 3}s')
         print("Finish _execute_batch function")
+
     def combined(self, n_wallets, asset_info, borrow_info, loan_ratio_info, liquidate_info):
         for level in self.levels:
             try:

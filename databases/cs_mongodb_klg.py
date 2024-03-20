@@ -32,6 +32,7 @@ class MongoDB:
 
         self._configs_col = self.mongo_db["configs"]
         self.projects= self.mongo_db['projects']
+        self.interactions= self.mongo_db['interactions']
 
         # self._create_index()
 
@@ -50,7 +51,7 @@ class MongoDB:
     #######################
     #       Token         #
     #######################
-    def get_tokens_by_keys(self, keys, projection):
+    def get_tokens_by_keys(self, keys, projection=None):
         filter_statement = {
             "idCoingecko": {"$exists": True},
             "_id": {"$in": keys}
@@ -181,8 +182,8 @@ class MongoDB:
             filter_statement = {
                 "flagged": flag_idx
             }
-            projection_statement = self.get_projection_statement(projection)
-            cursor = self._multichain_wallets_col.find(filter_statement, projection=projection_statement,
+            # projection_statement = self.get_projection_statement(projection)
+            cursor = self._multichain_wallets_col.find(filter_statement, projection=projection,
                                                        batch_size=batch_size)
             return cursor
         except Exception as ex:
@@ -192,6 +193,11 @@ class MongoDB:
     def get_multichain_wallets_scores_by_keys(self, keys, projection=None):
         filter_statement = {'_id': {'$in': keys}}
         cursor = self._multichain_wallets_credit_scores_col.find(filter_statement, projection=projection)
+        return cursor
+
+    def get_multichain_wallets_scores_by_key(self, keys, projection=None):
+        filter_statement = {'_id':  keys}
+        cursor = self._multichain_wallets_credit_scores_col.find_one(filter_statement, projection=projection)
         return cursor
 
     # def get_wallets_statistics_data(self, keys, batch_size=1000):
@@ -380,3 +386,10 @@ class MongoDB:
         else:
             docs= self.projects.find_one({'_id': protocol})
         return docs
+
+    def count_wallet_interaction(self, filter):
+        number = self.interactions.count_documents(filter, )
+        return number
+
+    #  aave_users
+    # aave_holders

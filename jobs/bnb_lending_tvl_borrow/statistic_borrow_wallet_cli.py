@@ -17,7 +17,7 @@ logger = get_logger("Statistic scores")
 @click.option(
     "-bs",
     "--wallet-batch-size",
-    default=25000,
+    default=50000,
     show_default=True,
     type=int,
     help="Wallet batch size",
@@ -25,7 +25,7 @@ logger = get_logger("Statistic scores")
 @click.option(
     "-w",
     "--max-workers",
-    default=12,
+    default=20,
     show_default=True,
     type=int,
     help="The number of workers",
@@ -35,7 +35,7 @@ def statistic_scores(n_cpu, cpu, wallet_batch_size, max_workers):
     klg_db = KLG()
     logger.info(f"Connect to graph: {klg_db.connection_url}")
 
-    flagged_state = klg_db.get_wallet_flagged_state('0x38')
+    flagged_state = klg_db.get_wallet_flagged_state('0xa4b1')
     wallets_batch = flagged_state["batch_idx"]
     logger.info(f"There are {wallets_batch} batches")
 
@@ -59,8 +59,12 @@ def statistic_scores(n_cpu, cpu, wallet_batch_size, max_workers):
         data = {
             'total_borrow_amount': job.total_borrow_amount,
             'number_borrow_wallet': job.number_borrow_wallet,
-            'borrow_info': job.borrow_info}
-        with open("borrow_info.json", 'w') as f:
+            'borrow_info': job.borrow_info,
+            'total_deposit_amount': job.total_deposit_amount,
+            'number_deposit_wallet': job.number_deposit_wallet,
+            'deposit_info': job.deposit_info
+        }
+        with open("lending_info.json", 'w') as f:
             json.dump(data, f)
 
 if __name__=="__main__":

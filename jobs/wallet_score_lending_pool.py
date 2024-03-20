@@ -13,7 +13,7 @@ def get_data():
     for type_ in ['borrower', 'debtor']:
         for chain_id in Chains.names:
             file_name = f'{type_}_{chain_id}'
-            with open(f'users/{file_name}.json') as f:
+            with open(f'users/{file_name}.json', 'r') as f:
                 addresses_ = json.load(f)
 
             data[file_name] = addresses_

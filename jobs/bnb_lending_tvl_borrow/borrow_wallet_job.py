@@ -33,17 +33,26 @@ class BorrowWalletJob(BaseJob):
     def _init_default(self):
         total_borrow_amount= 0
         number_borrow_wallet= 0
+        number_deposit_wallet=0
+        total_deposit_amount=0
         borrow_info={level:0 for level in self.ranges}
+        deposit_info = {level:0 for level in self.ranges}
         return {
             'total_borrow_amount':total_borrow_amount,
+            'total_deposit_amount':total_deposit_amount,
             'number_borrow_wallet':number_borrow_wallet,
-            'borrow_info':borrow_info
+            'number_deposit_wallet':number_deposit_wallet,
+            'borrow_info':borrow_info,
+            'deposit_info': deposit_info
             }
     def _start(self):
         data = self._init_default()
         self.total_borrow_amount= data['total_borrow_amount']
         self.number_borrow_wallet= data['number_borrow_wallet']
+        self.total_deposit_amount = data['total_borrow_amount']
+        self.number_deposit_wallet = data['number_borrow_wallet']
         self.borrow_info= data['borrow_info']
+        self.deposit_info= data['deposit_info']
         self.start_exec_time = int(time.time())
 
 
@@ -66,12 +75,15 @@ class BorrowWalletJob(BaseJob):
     def _execute_batch(self, wallets_batch_indicates):
         data = self._init_default()
         total_borrow_amount = data['total_borrow_amount']
+        total_deposit_amount = data['total_deposit_amount']
         number_borrow_wallet = data['number_borrow_wallet']
+        number_deposit_wallet = data['number_deposit_wallet']
         borrow_info = data['borrow_info']
+        deposit_info = data['deposit_info']
 
         for batch_idx in wallets_batch_indicates:
             start_time= time.time()
-            cursors= self._db.get_wallets_with_batch_idx(batch_idx=batch_idx,chain_id= '0x38', projection=['borrowInUSD','address'])
+            cursors= self._db.get_wallets_with_batch_idx(batch_idx=batch_idx,chain_id= '0xa4b1', projection=['borrowInUSD','depositInUSD','address'])
             cnt = 0
 
             for cursor in cursors:
@@ -80,26 +92,40 @@ class BorrowWalletJob(BaseJob):
                     logger.info(f"Execute {cnt} ({round(100 * cnt / 50000, 2)}%) wallets on batch [{batch_idx}]")
 
                 borrow= cursor.get('borrowInUSD',0)
+                deposit=cursor.get('depositInUSD', 0)
                 wallet = cursor['address']
                 if borrow>0:
                     total_borrow_amount+=borrow
                     number_borrow_wallet+=1
-                    level= self.get_range_of_borrow_amount(borrow)
+                    level= self.get_range_of_lending_amount(borrow)
                     borrow_info[level]+=1
+                if deposit > 0:
+                    total_deposit_amount += deposit
+                    number_deposit_wallet += 1
+                    level = self.get_range_of_lending_amount(deposit)
+                    deposit_info[level] += 1
+
             print("total_borrow_amount: ", total_borrow_amount)
             print("number_borrow_wallet: ", number_borrow_wallet)
             print("borrow_info: ", borrow_info)
+            print("total_deposit_amount: ", total_deposit_amount)
+            print("number_deposit_wallet: ", number_deposit_wallet)
+            print("deposit_info: ", deposit_info)
             logger.info(f'Time to execute of batch {batch_idx} is {time.time() - start_time} seconds')
 
-        self.combined(total_borrow_amount,number_borrow_wallet, borrow_info)
+        self.combined(total_borrow_amount,number_borrow_wallet, borrow_info, total_deposit_amount, number_deposit_wallet,deposit_info )
         logger.info(f'[{wallets_batch_indicates}] Executed, took {time.time() - self.start_exec_time, 3}s')
 
-    def combined(self,total_borrow_amount,number_borrow_wallet, borrow_info ):
+    def combined(self,total_borrow_amount,number_borrow_wallet, borrow_info, total_deposit_amount, number_deposit_wallet,deposit_info  ):
         self.total_borrow_amount+=total_borrow_amount
         self.number_borrow_wallet+=number_borrow_wallet
+        self.total_deposit_amount += total_deposit_amount
+        self.number_deposit_wallet += number_deposit_wallet
         for level in self.ranges:
             self.borrow_info[level]+=borrow_info[level]
-    def get_range_of_borrow_amount(self,amount):
+            self.deposit_info[level] += deposit_info[level]
+
+    def get_range_of_lending_amount(self,amount):
         for idx, thresold in enumerate(self.ranges):
             if amount < thresold:
                 return self.ranges[idx - 1]

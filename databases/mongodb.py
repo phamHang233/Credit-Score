@@ -1,14 +1,12 @@
 from pymongo import MongoClient
-from pymongo import UpdateOne
 from config import MongoConfig
 from utils.logger_utils import get_logger
-from utils.retry_handler import retry_handler
 
 logger = get_logger("Blockchain ETL")
 
 
 class MongoDB:
-    def __init__(self, connection_url=None, database=None, db_prefix=""):
+    def __init__(self, connection_url=None, db_prefix=""):
         self._conn = None
         if not connection_url:
             connection_url = MongoConfig.CONNECTION_URL
@@ -23,6 +21,9 @@ class MongoDB:
             db_name = _db
 
         self.mongo_db = self.connection[db_name]
+        self.transaction = self.mongo_db['transactions']
+        self.blocks= self.mongo_db['blocks']
+        self.projects= self.mongo_db['projects']
 
     def get_smart_contracts(self):
         cursor = self.mongo_db.find({""}, batch_size=10000)
@@ -48,6 +49,16 @@ class MongoDB:
             result = _collection.find(conditions)
         return result
 
+    def get_transactions(self, filter, args = None):
+        if args:
+            result = self.transaction.find(filter, args)
+        else:
+            result = self.transaction.find(filter)
+        return result
+
+    def get_transactions_count_doc(self, filter):
+        number = self.transaction.count_documents(filter)
+        return number
 
 #     @retry_handler
 #     def update_document(self, collection, document, upsert=True):
@@ -88,3 +99,8 @@ class MongoDB:
 #         else:
 #             out[key] = val
 #     return out
+    def get_address_in_projects(self, protocols, args=None):
+        if args:
+            return self.projects.find_one({"_id": protocols }, args)
+        else:
+            return self.projects.find_one({"_id": protocols})

@@ -6,7 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/cli" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.10 (Credit-Score)" jdkType="Python SDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="bf6ded7f-650f-447e-82c1-0760877ee47d" />
   </component>
 </module>

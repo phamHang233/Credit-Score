@@ -1,0 +1,30 @@
+
+opython:S1192N"RDefine a constant instead of duplicating this literal "number of borrows" 4 times.(¿İÁêûÿÿÿÿ
+wpython:S1192M"ZDefine a constant instead of duplicating this literal "Percentage mode n borrows" 4 times.(êŸõƒùÿÿÿÿ
+ipython:S1192I"LDefine a constant instead of duplicating this literal "Mode amount" 6 times.(‚†ãıÿÿÿÿ
+qpython:S1192H"YDefine a constant instead of duplicating this literal "Average amount of events" 6 times.(³¸Ôú
+bpython:S1192Ù"IDefine a constant instead of duplicating this literal "Chain Id" 4 times.(øØ·ù
+rpython:S1192K"ZDefine a constant instead of duplicating this literal "Average number of wallets" 6 times.(ìŸè‘
+opython:S1192L"WDefine a constant instead of duplicating this literal "Mode number of borrows" 4 times.(Ä˜ï²
+jpython:S1192F"RDefine a constant instead of duplicating this literal "Number of wallets" 6 times.(ŠÿºÉ
+kpython:S1192O"NDefine a constant instead of duplicating this literal "Borrow amount" 4 times.(ºç½“øÿÿÿÿ
+wpython:S1192G"ZDefine a constant instead of duplicating this literal "Average amount of wallets" 6 times.(÷öÙ‹ùÿÿÿÿ
+tpython:S1192J"WDefine a constant instead of duplicating this literal "Percentage mode amount" 6 times.(Ù‰ğïùÿÿÿÿ
+|python:S1192P"_Define a constant instead of duplicating this literal "Percentage mode number borrows" 4 times.(ĞŒêşÿÿÿÿÿ
+qpython:S3776"TRefactor this function to reduce its Cognitive Complexity from 30 to the 15 allowed.(ôª³øùÿÿÿÿ
+;python:S125;"Remove this commented out code.(¾¤¶ ÿÿÿÿÿ
+upython:S2737a"XAdd logic to this except clause or eliminate it and rethrow the exception automatically.(ÏõîËûÿÿÿÿ
+;python:S125d"Remove this commented out code.(‡Ã±½şÿÿÿÿ
+mpython:S3776“"TRefactor this function to reduce its Cognitive Complexity from 26 to the 15 allowed.(ÀÔ¶’
+7python:S125Í"Remove this commented out code.(½ÏÊ³
+<python:S125õ"Remove this commented out code.(‡Ã±½şÿÿÿÿ
+mpython:S3776„"TRefactor this function to reduce its Cognitive Complexity from 26 to the 15 allowed.(¦Ñ€Ş
+<python:S125¸"Remove this commented out code.(¨‡°¸øÿÿÿÿ
+^python:S3457Ù"EAdd replacement fields or use a normal string instead of an f-string.(Œ¡ï
+ppython:S117è"SRename this parameter "chainId" to match the regular expression ^[_a-z][a-z0-9_]*$.(§–¢óùÿÿÿÿ
+<python:S125ì"Remove this commented out code.(Èïî¡ıÿÿÿÿ
+kpython:S117ø"SRename this parameter "chainId" to match the regular expression ^[_a-z][a-z0-9_]*$.(ßÚ÷–
+<python:S125ƒ"Remove this commented out code.(«öùÿÿÿÿÿ
+6python:S125"Remove this commented out code.(»ı–
+
+7python:S125©"Remove this commented out code.(óòîŒ
