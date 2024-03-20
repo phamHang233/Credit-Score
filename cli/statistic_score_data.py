@@ -25,7 +25,7 @@ logger = get_logger("Statistic scores")
 @click.option(
     "-w",
     "--max-workers",
-    default=12,
+    default=10,
     show_default=True,
     type=int,
     help="The number of workers",

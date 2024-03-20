@@ -116,7 +116,6 @@ class WalletScoresJob(BaseJob):
             except Exception as ex:
                 logger.exception(ex)
                 continue
-
         self.concat_token_data(self.token_data, token_data)
         self.combined(n_wallets)
         logger.info(f'[{wallets_batch_indicates}] Executed, took {time.time() - self.start_exec_time, 3}s')
