@@ -29,3 +29,13 @@ K
 cli/statistic_score_data.py,0/9/0921f4ae76812236f3771e51ec5ab5964d19d00e
 \
 ,cli/statistic_borrow_liquidate_score_data.py,6/1/6196e15863735642a8dcbbaf002b5040efef06f3
+7
+main.py,f/1/f1bdda93d9a278e358509d498e17d97764c1fb29
+?
+requirement.txt,9/4/947575bab703658c1cbf5f87b75506b7180a9f8e
+?
+cli/__init__.py,7/8/78fd7d88322c81a0c062c02bdaca4c82d1abebff
+J
+cli/top_borrow_tokens.json,c/6/c6b4dbbfe0b19b49ef94652166da9aaf7d5f8bfc
+C
+cli/top_tokens.json,6/1/6111896e3332a21c074486135853c56d89736fb7

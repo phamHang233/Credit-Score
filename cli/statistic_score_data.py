@@ -57,6 +57,8 @@ def statistic_scores(n_cpu, cpu, wallet_batch_size, max_workers):
         logger.warning("Exit")
     finally:
         lending_tokens = job.token_data
+        number_wallet = job.n_wallets
+        print(f'Number of wallets: {number_wallet}')
         all_tokens = set()
 
         for level, token_info in lending_tokens.items():
@@ -111,5 +113,3 @@ def statistic_scores(n_cpu, cpu, wallet_batch_size, max_workers):
     logger.info("Done")
 
 
-if __name__ == "__main__":
-    statistic_scores()

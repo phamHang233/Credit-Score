@@ -47,6 +47,7 @@ class WalletScoresJob(BaseJob):
 
     def _end(self):
         print("_end function")
+
         self.batch_executor.shutdown()
 
     def get_level(self, score):
@@ -129,7 +130,6 @@ class WalletScoresJob(BaseJob):
             except Exception as ex:
                 logger.exception(ex)
 
-        self.show()
 
     def show(self):
         try:
