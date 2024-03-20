@@ -54,3 +54,7 @@ F
 jobs/check.py,3/e/3ecd42959e4845873d1d3cbf393158b38a30c7aa
 7
 test.py,a/3/a36e355ddb203d7d4133221f339dc406cb9f480f
+Q
+!databases/smart_contract_label.py,3/a/3a12957529421413c8d4203697f405f75b010c59
+\
+,jobs/statistics/wallet_in_pool_scores_job.py,f/4/f412837d780ca9462d6c11b6a2df54e5d8fe3ca2

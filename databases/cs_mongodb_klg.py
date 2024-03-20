@@ -1,4 +1,3 @@
-
 from pymongo import MongoClient, UpdateOne
 from utils.logger_utils import get_logger
 # from config import get_logger
@@ -31,8 +30,8 @@ class MongoDB:
         self._profiles_col = self.mongo_db["profiles"]
 
         self._configs_col = self.mongo_db["configs"]
-        self.projects= self.mongo_db['projects']
-        self.interactions= self.mongo_db['interactions']
+        self.projects = self.mongo_db['projects']
+        self.interactions = self.mongo_db['interactions']
 
         # self._create_index()
 
@@ -77,11 +76,13 @@ class MongoDB:
     def get_wallets_with_batch_idx(self, batch_idx=1, batch_size=10000, chain_id=None, projection=None):
         projection_statement = self.get_projection_statement(projection)
         if chain_id is None:
-            filter_statement = {'flagged': batch_idx, 'elite':True}
-            cursor = self._multichain_wallets_col.find(filter=filter_statement, projection=projection_statement, batch_size=batch_size)
+            filter_statement = {'flagged': batch_idx, 'elite': True}
+            cursor = self._multichain_wallets_col.find(filter=filter_statement, projection=projection_statement,
+                                                       batch_size=batch_size)
         else:
-            filter_statement = {'flagged': batch_idx, 'chainId': chain_id, 'elite':True}
-            cursor = self._wallets_col.find(filter=filter_statement, projection=projection_statement, batch_size=batch_size)
+            filter_statement = {'flagged': batch_idx, 'chainId': chain_id, 'elite': True}
+            cursor = self._wallets_col.find(filter=filter_statement, projection=projection_statement,
+                                            batch_size=batch_size)
         return cursor
 
     # @sync_log_time_exe(tag=TimeExeTag.databases)
@@ -109,7 +110,7 @@ class MongoDB:
     #     return wallets
 
     def get_wallet_addresses(
-        self, chain_id=None, batch_size=100000, update_created_at=False
+            self, chain_id=None, batch_size=100000, update_created_at=False
     ):
         try:
             if chain_id:
@@ -196,12 +197,12 @@ class MongoDB:
         return cursor
 
     def get_multichain_wallets_scores_by_score(self, score, projection=None):
-        filter_statement = {'creditScore': {"$gte" : score}}
+        filter_statement = {'creditScore': {"$gte": score}}
         cursor = self._multichain_wallets_credit_scores_col.find(filter_statement, projection=projection)
         return cursor
 
     def get_multichain_wallets_by_keys(self, keys, projection=None):
-        filter_statement =  {'_id': {'$in': keys}}
+        filter_statement = {'_id': {'$in': keys}}
         cursor = self._multichain_wallets_col.find(filter_statement, projection=projection)
         return cursor
 
@@ -384,12 +385,12 @@ class MongoDB:
 
         return projection_statements
 
-    def get_info_of_lending_protocol(self, protocol, projection:list=None):
+    def get_info_of_lending_protocol(self, protocol, projection: list = None):
         if projection is not None:
-            docs= self.projects.find_one({'_id':protocol}, projection)
+            docs = self.projects.find_one({'_id': protocol}, projection)
 
         else:
-            docs= self.projects.find_one({'_id': protocol})
+            docs = self.projects.find_one({'_id': protocol})
         return docs
 
     def count_wallet_interaction(self, filter):

@@ -1,0 +1,11 @@
+
+;python:S1258"Remove this commented out code.(°Ò«øÿÿÿÿ
+Gpython:S1656q"/Remove or correct this useless self-assignment.(âœµÕ
+vpython:S2737€"XAdd logic to this except clause or eliminate it and rethrow the exception automatically.(ÏõîËûÿÿÿÿ
+upython:S117Š"]Rename this local variable "reservesList" to match the regular expression ^[_a-z][a-z0-9_]*$.(´¿±¤
+Fpython:S1481‹"(Remove the unused local variable "fork".(â³êÜøÿÿÿÿ
+ypython:S117º"aRename this local variable "deposit_with_LTH" to match the regular expression ^[_a-z][a-z0-9_]*$.(üŸæ
+python:S117Â"dRename this local variable "token_amount_in_USD" to match the regular expression ^[_a-z][a-z0-9_]*$.(«•ˆâÿÿÿÿÿ
+Lpython:S1481¤".Remove the unused local variable "start_time".(Õèî×ıÿÿÿÿ
+mpython:S3776˜"TRefactor this function to reduce its Cognitive Complexity from 54 to the 15 allowed.(ÕÌ®Ò
+7python:S125š"Remove this commented out code.(íœ

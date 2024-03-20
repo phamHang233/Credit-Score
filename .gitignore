@@ -1,2 +1,3 @@
 .env
 venv
+databases/__pycache__/cs_mongodb_klg.cpython-310.pyc
