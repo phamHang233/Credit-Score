@@ -7,3 +7,4 @@ pymongo==4.3.3
 python-cli-scheduler==1.1.1
 prettytable==3.8.0
 multithread-parallel-processing
+python-dotenv

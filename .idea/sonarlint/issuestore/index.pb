@@ -44,3 +44,5 @@ C
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+d
+4venv/lib/python3.10/site-packages/dotenv/__init__.py,4/6/4642cc80b72cab1b523350667a6dbb2b349e6ef7

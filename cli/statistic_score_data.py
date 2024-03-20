@@ -104,12 +104,10 @@ def statistic_scores(n_cpu, cpu, wallet_batch_size, max_workers):
             print(f'{level}: {list(tokens.items())[:5]}')
 
         with open('top_borrow_tokens.json', 'w') as f:
-            data = {level: list(tokens.items())[:5] for level, tokens in top_borrow_token_amount.items()}
-            json.dump(data, f)
+            json.dump(top_borrow_token_amount, f)
 
         with open('top_tokens.json', 'w') as f:
-            data = {level: list(tokens.items())[:5] for level, tokens in top_token_amount.items()}
-            json.dump(data, f)
+            json.dump(top_token_amount, f)
     logger.info("Done")
 
 
